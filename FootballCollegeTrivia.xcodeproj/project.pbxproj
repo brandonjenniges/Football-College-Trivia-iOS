@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3802F348B4DD66C6D2F37E9E /* Pods_NFL_College_TriviaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D817D9E29EE5BF5F5EE1B2 /* Pods_NFL_College_TriviaUITests.framework */; };
+		8012CE38EB29CBBE6BD591F8 /* Pods_FootballCollegeTriviaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B79CC7ED245EADEB38FC82 /* Pods_FootballCollegeTriviaTests.framework */; };
+		8C00A01FEAB60FDE1DD143F3 /* Pods_FootballCollegeTriviaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267972A6F7E64872A97B1D71 /* Pods_FootballCollegeTriviaUITests.framework */; };
+		B0A9DDE7F9C34F35DC19C1C5 /* Pods_NFL_College_TriviaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E939070BD377B6A6293AC5C6 /* Pods_NFL_College_TriviaTests.framework */; };
+		FB40502E1BF8F59A002900CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40500F1BF8F59A002900CC /* AppDelegate.swift */; };
+		FB40502F1BF8F59A002900CC /* all_colleges.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB4050111BF8F59A002900CC /* all_colleges.txt */; };
+		FB4050301BF8F59A002900CC /* all_players.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB4050121BF8F59A002900CC /* all_players.txt */; };
+		FB4050311BF8F59A002900CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4050131BF8F59A002900CC /* Assets.xcassets */; };
+		FB4050321BF8F59A002900CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4050141BF8F59A002900CC /* Main.storyboard */; };
+		FB4050341BF8F59A002900CC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4050171BF8F59A002900CC /* GameViewController.swift */; };
+		FB4050361BF8F59A002900CC /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40501A1BF8F59A002900CC /* ArrayExtension.swift */; };
+		FB4050371BF8F59A002900CC /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40501B1BF8F59A002900CC /* College.swift */; };
+		FB4050381BF8F59A002900CC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40501C1BF8F59A002900CC /* Game.swift */; };
+		FB4050391BF8F59A002900CC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40501D1BF8F59A002900CC /* Player.swift */; };
+		FB40503A1BF8F59A002900CC /* NFL_College_Trivia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB40501F1BF8F59A002900CC /* NFL_College_Trivia.xcdatamodeld */; };
+		FB40503B1BF8F59A002900CC /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4050211BF8F59A002900CC /* ResultsViewController.swift */; };
+		FB40503C1BF8F59A002900CC /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4050221BF8F59A002900CC /* TitleViewController.swift */; };
+		FB40503D1BF8F59A002900CC /* UIButton+Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4050231BF8F59A002900CC /* UIButton+Game.swift */; };
+		FB40503E1BF8F59A002900CC /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4050241BF8F59A002900CC /* Util.swift */; };
+		FB4050451BF8F688002900CC /* NFL_College_TriviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4050271BF8F59A002900CC /* NFL_College_TriviaTests.swift */; };
+		FB4050471BF8F6A1002900CC /* NFL_College_TriviaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40502D1BF8F59A002900CC /* NFL_College_TriviaUITests.swift */; };
+		FB4050481BF8F6A7002900CC /* testCollege.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4050281BF8F59A002900CC /* testCollege.swift */; };
+		FB4050491BF8F6B4002900CC /* testPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40502A1BF8F59A002900CC /* testPlayer.swift */; };
+		FB40504A1BF8F6D6002900CC /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40501B1BF8F59A002900CC /* College.swift */; };
+		FB40504B1BF8F6D9002900CC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40501D1BF8F59A002900CC /* Player.swift */; };
+		FB40504F1BF8F9D0002900CC /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB40504E1BF8F9D0002900CC /* Config.plist */; };
+		FBA58E801B4B8C2E00E93AA2 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA58E7E1B4B8C2E00E93AA2 /* Fabric.framework */; };
+		FBA58E811B4B8C2F00E93AA2 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA58E7F1B4B8C2E00E93AA2 /* Crashlytics.framework */; };
+		FBCEC99C1EC5ED924280B4AB /* Pods_FootballCollegeTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB680ED83BAC1107BDF0539 /* Pods_FootballCollegeTrivia.framework */; };
+		FBF84DA71B93EC7E00015159 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF84DA61B93EC7E00015159 /* CoreData.framework */; };
+		FBF84DA91B93EC9500015159 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF84DA81B93EC9500015159 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB3330791B38FF960056DD62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB3330591B38FF960056DD62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB3330601B38FF960056DD62;
+			remoteInfo = "NFL-College-Trivia";
+		};
+		FB3330841B38FF970056DD62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB3330591B38FF960056DD62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB3330601B38FF960056DD62;
+			remoteInfo = "NFL-College-Trivia";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		055D7C5B145F1D3CDC8ACDF5 /* Pods-FootballCollegeTriviaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootballCollegeTriviaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FootballCollegeTriviaTests/Pods-FootballCollegeTriviaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0BB680ED83BAC1107BDF0539 /* Pods_FootballCollegeTrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FootballCollegeTrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		267972A6F7E64872A97B1D71 /* Pods_FootballCollegeTriviaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FootballCollegeTriviaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E2E3D6794FEEB9AF18CEB8 /* Pods-FootballCollegeTriviaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootballCollegeTriviaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FootballCollegeTriviaUITests/Pods-FootballCollegeTriviaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2863E1C35C2C5FA3440A223F /* Pods-NFL-College-TriviaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFL-College-TriviaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NFL-College-TriviaTests/Pods-NFL-College-TriviaTests.release.xcconfig"; sourceTree = "<group>"; };
+		3237A65A6F67DA40AF19CD55 /* Pods-NFL-College-TriviaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFL-College-TriviaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NFL-College-TriviaUITests/Pods-NFL-College-TriviaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		327C6106EC54654AA0172CB0 /* Pods-NFL-College-TriviaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFL-College-TriviaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NFL-College-TriviaUITests/Pods-NFL-College-TriviaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		362A7211354FD58DAA3575D3 /* Pods-NFL-College-TriviaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFL-College-TriviaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NFL-College-TriviaTests/Pods-NFL-College-TriviaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50B79CC7ED245EADEB38FC82 /* Pods_FootballCollegeTriviaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FootballCollegeTriviaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EAA876FB2D54421DB67AF8D /* Pods-FootballCollegeTrivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootballCollegeTrivia.release.xcconfig"; path = "Pods/Target Support Files/Pods-FootballCollegeTrivia/Pods-FootballCollegeTrivia.release.xcconfig"; sourceTree = "<group>"; };
+		6C46459AC0373C775C8A42A5 /* Pods_NFL_College_Trivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFL_College_Trivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BCADDB4CF8CC0ED8896603D /* Pods-FootballCollegeTriviaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootballCollegeTriviaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FootballCollegeTriviaTests/Pods-FootballCollegeTriviaTests.release.xcconfig"; sourceTree = "<group>"; };
+		8BFA53745F1039FBE2CD461C /* Pods-FootballCollegeTriviaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootballCollegeTriviaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FootballCollegeTriviaUITests/Pods-FootballCollegeTriviaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		91D2CDA717EABF8CA0725D70 /* Pods-NFL-College-Trivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFL-College-Trivia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NFL-College-Trivia/Pods-NFL-College-Trivia.debug.xcconfig"; sourceTree = "<group>"; };
+		DF0987FDD3F2628BE7443C05 /* Pods-NFL-College-Trivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFL-College-Trivia.release.xcconfig"; path = "Pods/Target Support Files/Pods-NFL-College-Trivia/Pods-NFL-College-Trivia.release.xcconfig"; sourceTree = "<group>"; };
+		E939070BD377B6A6293AC5C6 /* Pods_NFL_College_TriviaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFL_College_TriviaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC1329A9891CE5E11C2C56A7 /* Pods-FootballCollegeTrivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootballCollegeTrivia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FootballCollegeTrivia/Pods-FootballCollegeTrivia.debug.xcconfig"; sourceTree = "<group>"; };
+		F6D817D9E29EE5BF5F5EE1B2 /* Pods_NFL_College_TriviaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFL_College_TriviaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3330611B38FF960056DD62 /* FootballCollegeTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballCollegeTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3330781B38FF960056DD62 /* FootballCollegeTriviaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootballCollegeTriviaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3330831B38FF970056DD62 /* FootballCollegeTriviaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootballCollegeTriviaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB40500F1BF8F59A002900CC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB4050111BF8F59A002900CC /* all_colleges.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = all_colleges.txt; sourceTree = "<group>"; };
+		FB4050121BF8F59A002900CC /* all_players.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = all_players.txt; sourceTree = "<group>"; };
+		FB4050131BF8F59A002900CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB4050151BF8F59A002900CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB4050171BF8F59A002900CC /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FB4050181BF8F59A002900CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB40501A1BF8F59A002900CC /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		FB40501B1BF8F59A002900CC /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
+		FB40501C1BF8F59A002900CC /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		FB40501D1BF8F59A002900CC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		FB40501E1BF8F59A002900CC /* NFL-College-Trivia-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NFL-College-Trivia-Bridging-Header.h"; sourceTree = "<group>"; };
+		FB4050201BF8F59A002900CC /* NFL_College_Trivia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NFL_College_Trivia.xcdatamodel; sourceTree = "<group>"; };
+		FB4050211BF8F59A002900CC /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		FB4050221BF8F59A002900CC /* TitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
+		FB4050231BF8F59A002900CC /* UIButton+Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Game.swift"; sourceTree = "<group>"; };
+		FB4050241BF8F59A002900CC /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		FB4050261BF8F59A002900CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4050271BF8F59A002900CC /* NFL_College_TriviaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFL_College_TriviaTests.swift; sourceTree = "<group>"; };
+		FB4050281BF8F59A002900CC /* testCollege.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testCollege.swift; sourceTree = "<group>"; };
+		FB40502A1BF8F59A002900CC /* testPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testPlayer.swift; sourceTree = "<group>"; };
+		FB40502C1BF8F59A002900CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB40502D1BF8F59A002900CC /* NFL_College_TriviaUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFL_College_TriviaUITests.swift; sourceTree = "<group>"; };
+		FB40504E1BF8F9D0002900CC /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		FBA58E7E1B4B8C2E00E93AA2 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		FBA58E7F1B4B8C2E00E93AA2 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		FBF84DA61B93EC7E00015159 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FBF84DA81B93EC9500015159 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB33305E1B38FF960056DD62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF84DA91B93EC9500015159 /* SystemConfiguration.framework in Frameworks */,
+				FBF84DA71B93EC7E00015159 /* CoreData.framework in Frameworks */,
+				FBA58E811B4B8C2F00E93AA2 /* Crashlytics.framework in Frameworks */,
+				FBA58E801B4B8C2E00E93AA2 /* Fabric.framework in Frameworks */,
+				FBCEC99C1EC5ED924280B4AB /* Pods_FootballCollegeTrivia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3330751B38FF960056DD62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0A9DDE7F9C34F35DC19C1C5 /* Pods_NFL_College_TriviaTests.framework in Frameworks */,
+				8012CE38EB29CBBE6BD591F8 /* Pods_FootballCollegeTriviaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3330801B38FF970056DD62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3802F348B4DD66C6D2F37E9E /* Pods_NFL_College_TriviaUITests.framework in Frameworks */,
+				8C00A01FEAB60FDE1DD143F3 /* Pods_FootballCollegeTriviaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2541C72587A13BCAF1AB69E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91D2CDA717EABF8CA0725D70 /* Pods-NFL-College-Trivia.debug.xcconfig */,
+				DF0987FDD3F2628BE7443C05 /* Pods-NFL-College-Trivia.release.xcconfig */,
+				362A7211354FD58DAA3575D3 /* Pods-NFL-College-TriviaTests.debug.xcconfig */,
+				2863E1C35C2C5FA3440A223F /* Pods-NFL-College-TriviaTests.release.xcconfig */,
+				3237A65A6F67DA40AF19CD55 /* Pods-NFL-College-TriviaUITests.debug.xcconfig */,
+				327C6106EC54654AA0172CB0 /* Pods-NFL-College-TriviaUITests.release.xcconfig */,
+				EC1329A9891CE5E11C2C56A7 /* Pods-FootballCollegeTrivia.debug.xcconfig */,
+				5EAA876FB2D54421DB67AF8D /* Pods-FootballCollegeTrivia.release.xcconfig */,
+				055D7C5B145F1D3CDC8ACDF5 /* Pods-FootballCollegeTriviaTests.debug.xcconfig */,
+				7BCADDB4CF8CC0ED8896603D /* Pods-FootballCollegeTriviaTests.release.xcconfig */,
+				26E2E3D6794FEEB9AF18CEB8 /* Pods-FootballCollegeTriviaUITests.debug.xcconfig */,
+				8BFA53745F1039FBE2CD461C /* Pods-FootballCollegeTriviaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD719ADF00E0267084407FEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBF84DA81B93EC9500015159 /* SystemConfiguration.framework */,
+				FBF84DA61B93EC7E00015159 /* CoreData.framework */,
+				FBA58E7E1B4B8C2E00E93AA2 /* Fabric.framework */,
+				FBA58E7F1B4B8C2E00E93AA2 /* Crashlytics.framework */,
+				6C46459AC0373C775C8A42A5 /* Pods_NFL_College_Trivia.framework */,
+				E939070BD377B6A6293AC5C6 /* Pods_NFL_College_TriviaTests.framework */,
+				F6D817D9E29EE5BF5F5EE1B2 /* Pods_NFL_College_TriviaUITests.framework */,
+				0BB680ED83BAC1107BDF0539 /* Pods_FootballCollegeTrivia.framework */,
+				50B79CC7ED245EADEB38FC82 /* Pods_FootballCollegeTriviaTests.framework */,
+				267972A6F7E64872A97B1D71 /* Pods_FootballCollegeTriviaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB3330581B38FF960056DD62 = {
+			isa = PBXGroup;
+			children = (
+				FB40500E1BF8F59A002900CC /* FootballCollegeTrivia */,
+				FB4050251BF8F59A002900CC /* FootballCollegeTriviaTests */,
+				FB40502B1BF8F59A002900CC /* FootballCollegeTriviaUITests */,
+				CD719ADF00E0267084407FEC /* Frameworks */,
+				2541C72587A13BCAF1AB69E8 /* Pods */,
+				FB3330621B38FF960056DD62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB3330621B38FF960056DD62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB3330611B38FF960056DD62 /* FootballCollegeTrivia.app */,
+				FB3330781B38FF960056DD62 /* FootballCollegeTriviaTests.xctest */,
+				FB3330831B38FF970056DD62 /* FootballCollegeTriviaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB40500E1BF8F59A002900CC /* FootballCollegeTrivia */ = {
+			isa = PBXGroup;
+			children = (
+				FB40500F1BF8F59A002900CC /* AppDelegate.swift */,
+				FB4050101BF8F59A002900CC /* Assets */,
+				FB4050131BF8F59A002900CC /* Assets.xcassets */,
+				FB4050141BF8F59A002900CC /* Main.storyboard */,
+				FB4050171BF8F59A002900CC /* GameViewController.swift */,
+				FB4050181BF8F59A002900CC /* Info.plist */,
+				FB4050191BF8F59A002900CC /* Model */,
+				FB40501E1BF8F59A002900CC /* NFL-College-Trivia-Bridging-Header.h */,
+				FB40501F1BF8F59A002900CC /* NFL_College_Trivia.xcdatamodeld */,
+				FB4050211BF8F59A002900CC /* ResultsViewController.swift */,
+				FB4050221BF8F59A002900CC /* TitleViewController.swift */,
+				FB4050231BF8F59A002900CC /* UIButton+Game.swift */,
+				FB4050241BF8F59A002900CC /* Util.swift */,
+				FB40504E1BF8F9D0002900CC /* Config.plist */,
+			);
+			path = FootballCollegeTrivia;
+			sourceTree = "<group>";
+		};
+		FB4050101BF8F59A002900CC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FB4050111BF8F59A002900CC /* all_colleges.txt */,
+				FB4050121BF8F59A002900CC /* all_players.txt */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FB4050191BF8F59A002900CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB40501A1BF8F59A002900CC /* ArrayExtension.swift */,
+				FB40501B1BF8F59A002900CC /* College.swift */,
+				FB40501C1BF8F59A002900CC /* Game.swift */,
+				FB40501D1BF8F59A002900CC /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB4050251BF8F59A002900CC /* FootballCollegeTriviaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB4050261BF8F59A002900CC /* Info.plist */,
+				FB4050271BF8F59A002900CC /* NFL_College_TriviaTests.swift */,
+				FB4050281BF8F59A002900CC /* testCollege.swift */,
+				FB4050291BF8F59A002900CC /* TestPlayers */,
+			);
+			path = FootballCollegeTriviaTests;
+			sourceTree = "<group>";
+		};
+		FB4050291BF8F59A002900CC /* TestPlayers */ = {
+			isa = PBXGroup;
+			children = (
+				FB40502A1BF8F59A002900CC /* testPlayer.swift */,
+			);
+			path = TestPlayers;
+			sourceTree = "<group>";
+		};
+		FB40502B1BF8F59A002900CC /* FootballCollegeTriviaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB40502C1BF8F59A002900CC /* Info.plist */,
+				FB40502D1BF8F59A002900CC /* NFL_College_TriviaUITests.swift */,
+			);
+			path = FootballCollegeTriviaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB3330601B38FF960056DD62 /* FootballCollegeTrivia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB33308C1B38FF970056DD62 /* Build configuration list for PBXNativeTarget "FootballCollegeTrivia" */;
+			buildPhases = (
+				242EFE903785FD4E0546E2BB /* Check Pods Manifest.lock */,
+				FB33305D1B38FF960056DD62 /* Sources */,
+				FB33305E1B38FF960056DD62 /* Frameworks */,
+				FB33305F1B38FF960056DD62 /* Resources */,
+				3024856160E695DA3D8DC261 /* Embed Pods Frameworks */,
+				AE175A499286F1586C401935 /* Copy Pods Resources */,
+				FBA58E7D1B4B8C1E00E93AA2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FootballCollegeTrivia;
+			productName = "NFL-College-Trivia";
+			productReference = FB3330611B38FF960056DD62 /* FootballCollegeTrivia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB3330771B38FF960056DD62 /* FootballCollegeTriviaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB33308F1B38FF970056DD62 /* Build configuration list for PBXNativeTarget "FootballCollegeTriviaTests" */;
+			buildPhases = (
+				1EDC692396E2FA7A54C5CFD3 /* Check Pods Manifest.lock */,
+				FB3330741B38FF960056DD62 /* Sources */,
+				FB3330751B38FF960056DD62 /* Frameworks */,
+				FB3330761B38FF960056DD62 /* Resources */,
+				FAB11734C53C19A87FE15644 /* Embed Pods Frameworks */,
+				E4A8A41ACBCCCC1102268317 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB33307A1B38FF960056DD62 /* PBXTargetDependency */,
+			);
+			name = FootballCollegeTriviaTests;
+			productName = "NFL-College-TriviaTests";
+			productReference = FB3330781B38FF960056DD62 /* FootballCollegeTriviaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB3330821B38FF970056DD62 /* FootballCollegeTriviaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB3330921B38FF970056DD62 /* Build configuration list for PBXNativeTarget "FootballCollegeTriviaUITests" */;
+			buildPhases = (
+				4907E399FF170CB56FAB02C5 /* Check Pods Manifest.lock */,
+				FB33307F1B38FF970056DD62 /* Sources */,
+				FB3330801B38FF970056DD62 /* Frameworks */,
+				FB3330811B38FF970056DD62 /* Resources */,
+				B9BA60F501B9424C93F3E7D3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB3330851B38FF970056DD62 /* PBXTargetDependency */,
+			);
+			name = FootballCollegeTriviaUITests;
+			productName = "NFL-College-TriviaUITests";
+			productReference = FB3330831B38FF970056DD62 /* FootballCollegeTriviaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB3330591B38FF960056DD62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Brandon Jenniges";
+				TargetAttributes = {
+					FB3330601B38FF960056DD62 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					FB3330771B38FF960056DD62 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = FB3330601B38FF960056DD62;
+					};
+					FB3330821B38FF970056DD62 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = FB3330601B38FF960056DD62;
+					};
+				};
+			};
+			buildConfigurationList = FB33305C1B38FF960056DD62 /* Build configuration list for PBXProject "FootballCollegeTrivia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB3330581B38FF960056DD62;
+			productRefGroup = FB3330621B38FF960056DD62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB3330601B38FF960056DD62 /* FootballCollegeTrivia */,
+				FB3330771B38FF960056DD62 /* FootballCollegeTriviaTests */,
+				FB3330821B38FF970056DD62 /* FootballCollegeTriviaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB33305F1B38FF960056DD62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB40502F1BF8F59A002900CC /* all_colleges.txt in Resources */,
+				FB4050311BF8F59A002900CC /* Assets.xcassets in Resources */,
+				FB4050301BF8F59A002900CC /* all_players.txt in Resources */,
+				FB40504F1BF8F9D0002900CC /* Config.plist in Resources */,
+				FB4050321BF8F59A002900CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3330761B38FF960056DD62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3330811B38FF970056DD62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EDC692396E2FA7A54C5CFD3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		242EFE903785FD4E0546E2BB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3024856160E695DA3D8DC261 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootballCollegeTrivia/Pods-FootballCollegeTrivia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4907E399FF170CB56FAB02C5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE175A499286F1586C401935 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootballCollegeTrivia/Pods-FootballCollegeTrivia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9BA60F501B9424C93F3E7D3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootballCollegeTriviaUITests/Pods-FootballCollegeTriviaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4A8A41ACBCCCC1102268317 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootballCollegeTriviaTests/Pods-FootballCollegeTriviaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAB11734C53C19A87FE15644 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootballCollegeTriviaTests/Pods-FootballCollegeTriviaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBA58E7D1B4B8C1E00E93AA2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB33305D1B38FF960056DD62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB40502E1BF8F59A002900CC /* AppDelegate.swift in Sources */,
+				FB4050381BF8F59A002900CC /* Game.swift in Sources */,
+				FB4050341BF8F59A002900CC /* GameViewController.swift in Sources */,
+				FB4050391BF8F59A002900CC /* Player.swift in Sources */,
+				FB40503B1BF8F59A002900CC /* ResultsViewController.swift in Sources */,
+				FB4050361BF8F59A002900CC /* ArrayExtension.swift in Sources */,
+				FB40503E1BF8F59A002900CC /* Util.swift in Sources */,
+				FB4050371BF8F59A002900CC /* College.swift in Sources */,
+				FB40503A1BF8F59A002900CC /* NFL_College_Trivia.xcdatamodeld in Sources */,
+				FB40503C1BF8F59A002900CC /* TitleViewController.swift in Sources */,
+				FB40503D1BF8F59A002900CC /* UIButton+Game.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3330741B38FF960056DD62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4050451BF8F688002900CC /* NFL_College_TriviaTests.swift in Sources */,
+				FB4050481BF8F6A7002900CC /* testCollege.swift in Sources */,
+				FB4050491BF8F6B4002900CC /* testPlayer.swift in Sources */,
+				FB40504B1BF8F6D9002900CC /* Player.swift in Sources */,
+				FB40504A1BF8F6D6002900CC /* College.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB33307F1B38FF970056DD62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4050471BF8F6A1002900CC /* NFL_College_TriviaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB33307A1B38FF960056DD62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB3330601B38FF960056DD62 /* FootballCollegeTrivia */;
+			targetProxy = FB3330791B38FF960056DD62 /* PBXContainerItemProxy */;
+		};
+		FB3330851B38FF970056DD62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB3330601B38FF960056DD62 /* FootballCollegeTrivia */;
+			targetProxy = FB3330841B38FF970056DD62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB4050141BF8F59A002900CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB4050151BF8F59A002900CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB33308A1B38FF970056DD62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB33308B1B38FF970056DD62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB33308D1B38FF970056DD62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC1329A9891CE5E11C2C56A7 /* Pods-FootballCollegeTrivia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/FootballCollegeTrivia/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.holtapps.NFL-College-Trivia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FootballCollegeTrivia/NFL-College-Trivia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB33308E1B38FF970056DD62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EAA876FB2D54421DB67AF8D /* Pods-FootballCollegeTrivia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/FootballCollegeTrivia/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.holtapps.NFL-College-Trivia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FootballCollegeTrivia/NFL-College-Trivia-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB3330901B38FF970056DD62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 055D7C5B145F1D3CDC8ACDF5 /* Pods-FootballCollegeTriviaTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FootballCollegeTriviaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.holtapps.NFL-College-TriviaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FootballCollegeTrivia.app/FootballCollegeTrivia";
+			};
+			name = Debug;
+		};
+		FB3330911B38FF970056DD62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BCADDB4CF8CC0ED8896603D /* Pods-FootballCollegeTriviaTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FootballCollegeTriviaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.holtapps.NFL-College-TriviaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FootballCollegeTrivia.app/FootballCollegeTrivia";
+			};
+			name = Release;
+		};
+		FB3330931B38FF970056DD62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26E2E3D6794FEEB9AF18CEB8 /* Pods-FootballCollegeTriviaUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FootballCollegeTriviaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.holtapps.NFL-College-TriviaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "NFL-College-Trivia";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FB3330941B38FF970056DD62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BFA53745F1039FBE2CD461C /* Pods-FootballCollegeTriviaUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FootballCollegeTriviaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.holtapps.NFL-College-TriviaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "NFL-College-Trivia";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB33305C1B38FF960056DD62 /* Build configuration list for PBXProject "FootballCollegeTrivia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB33308A1B38FF970056DD62 /* Debug */,
+				FB33308B1B38FF970056DD62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB33308C1B38FF970056DD62 /* Build configuration list for PBXNativeTarget "FootballCollegeTrivia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB33308D1B38FF970056DD62 /* Debug */,
+				FB33308E1B38FF970056DD62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB33308F1B38FF970056DD62 /* Build configuration list for PBXNativeTarget "FootballCollegeTriviaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3330901B38FF970056DD62 /* Debug */,
+				FB3330911B38FF970056DD62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB3330921B38FF970056DD62 /* Build configuration list for PBXNativeTarget "FootballCollegeTriviaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3330931B38FF970056DD62 /* Debug */,
+				FB3330941B38FF970056DD62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FB40501F1BF8F59A002900CC /* NFL_College_Trivia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB4050201BF8F59A002900CC /* NFL_College_Trivia.xcdatamodel */,
+			);
+			currentVersion = FB4050201BF8F59A002900CC /* NFL_College_Trivia.xcdatamodel */;
+			path = NFL_College_Trivia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FB3330591B38FF960056DD62 /* Project object */;
+}
