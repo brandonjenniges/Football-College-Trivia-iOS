@@ -32,7 +32,6 @@
 		FB4050491BF8F6B4002900CC /* testPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40502A1BF8F59A002900CC /* testPlayer.swift */; };
 		FB40504A1BF8F6D6002900CC /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40501B1BF8F59A002900CC /* College.swift */; };
 		FB40504B1BF8F6D9002900CC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40501D1BF8F59A002900CC /* Player.swift */; };
-		FB40504F1BF8F9D0002900CC /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB40504E1BF8F9D0002900CC /* Config.plist */; };
 		FBA58E801B4B8C2E00E93AA2 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA58E7E1B4B8C2E00E93AA2 /* Fabric.framework */; };
 		FBA58E811B4B8C2F00E93AA2 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA58E7F1B4B8C2E00E93AA2 /* Crashlytics.framework */; };
 		FBCEC99C1EC5ED924280B4AB /* Pods_FootballCollegeTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB680ED83BAC1107BDF0539 /* Pods_FootballCollegeTrivia.framework */; };
@@ -386,7 +385,6 @@
 				FB40502F1BF8F59A002900CC /* all_colleges.txt in Resources */,
 				FB4050311BF8F59A002900CC /* Assets.xcassets in Resources */,
 				FB4050301BF8F59A002900CC /* all_players.txt in Resources */,
-				FB40504F1BF8F9D0002900CC /* Config.plist in Resources */,
 				FB4050321BF8F59A002900CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
