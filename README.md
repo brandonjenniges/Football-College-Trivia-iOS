@@ -5,7 +5,9 @@ A football trivia game where the goal is to guess which college current NFL play
 Download
 --------------
 
-<a href="https://geo.itunes.apple.com/us/app/football-college-trivia/id879870156?mt=8" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;width:165px;height:40px;"></a>
+<a href="https://geo.itunes.apple.com/us/app/football-college-trivia/id879870156?mt=8">
+<img align="middle" alt="Get it on the App Store" src="https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg" />
+</a>
 
 Pre-requisites
 --------------
