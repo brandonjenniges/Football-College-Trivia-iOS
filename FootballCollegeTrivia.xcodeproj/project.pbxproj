@@ -101,7 +101,6 @@
 		FB40502A1BF8F59A002900CC /* testPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testPlayer.swift; sourceTree = "<group>"; };
 		FB40502C1BF8F59A002900CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB40502D1BF8F59A002900CC /* NFL_College_TriviaUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFL_College_TriviaUITests.swift; sourceTree = "<group>"; };
-		FB40504E1BF8F9D0002900CC /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		FBA58E7E1B4B8C2E00E93AA2 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		FBA58E7F1B4B8C2E00E93AA2 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		FBF84DA61B93EC7E00015159 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -216,7 +215,6 @@
 				FB4050221BF8F59A002900CC /* TitleViewController.swift */,
 				FB4050231BF8F59A002900CC /* UIButton+Game.swift */,
 				FB4050241BF8F59A002900CC /* Util.swift */,
-				FB40504E1BF8F9D0002900CC /* Config.plist */,
 			);
 			path = FootballCollegeTrivia;
 			sourceTree = "<group>";
