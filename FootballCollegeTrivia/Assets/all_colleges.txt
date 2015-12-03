@@ -213,7 +213,7 @@
 {"college":"Southern","tier":3},
 {"college":"Southern Arkansas","tier":3},
 {"college":"Southern Illinois","tier":2},
-{"college":"Southern Miss","tier":3},
+{"college":"Southern Miss","tier":2},
 {"college":"Southern Utah","tier":3},
 {"college":"St. Francis Xavier","tier":3},
 {"college":"St. Paul","tier":3},
