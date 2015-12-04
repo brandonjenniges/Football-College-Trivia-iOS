@@ -3,6 +3,7 @@
 //
 
 import XCTest
+import FootballCollegeTrivia
 
 class testCollege: XCTestCase {
 

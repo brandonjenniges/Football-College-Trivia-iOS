@@ -13,12 +13,14 @@ end
 target 'FootballCollegeTriviaTests' do
     
     pod 'SwiftyJSON', '~> 2.3.1'
+    pod 'GoogleAnalytics'
 
 end
 
 target 'FootballCollegeTriviaUITests' do
     
     pod 'SwiftyJSON', '~> 2.3.1'
+    pod 'GoogleAnalytics'
 
 end
 
