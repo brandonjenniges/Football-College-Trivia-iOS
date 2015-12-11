@@ -1,12 +1,12 @@
 //
-//  Copyright © 2014-2015 Brandon Jenniges. All rights reserved.
+//  Copyright © 2015 Brandon Jenniges. All rights reserved.
 //
 
 import XCTest
-import FootballCollegeTrivia
+@testable import FootballCollegeTrivia
 
-class testCollege: XCTestCase {
-
+class CollegeTests: XCTestCase {
+    
     override func setUp() {
         super.setUp()
     }
@@ -14,9 +14,9 @@ class testCollege: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
-
+    
     func testInit() {
-       let count = College.getAllColleges().count
+        let count = College.getAllColleges().count
         XCTAssert(count > 0)
     }
     
@@ -26,12 +26,5 @@ class testCollege: XCTestCase {
             XCTAssert(college.tier > 0 && college.tier < 4)
         }
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+    
 }

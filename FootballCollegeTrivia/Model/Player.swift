@@ -4,7 +4,7 @@
 
 import SwiftyJSON
 
-class Player {
+class Player: CustomStringConvertible {
     let firstName: String
     let lastName: String
     let proTeam: String
@@ -122,5 +122,11 @@ class Player {
     
     func getDisplayText() -> String {
         return "\(firstName) \(lastName) \(position) #\(jerseyNumber)"
+    }
+    
+    // MARK: - Debug printing
+    
+    var description: String {
+        return "Name: \(firstName) \(lastName) pos: \(position) #\(jerseyNumber) team: \(proTeam) college: \(college) tier: \(tier)"
     }
 }
