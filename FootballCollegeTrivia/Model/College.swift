@@ -9,10 +9,10 @@ class College: Equatable {
     let tier: Int
     
     struct CollegeArrays {
-        static var allColleges = [College]?()
-        static var tierOneColleges = [College]?()
-        static var tierTwoColleges = [College]?()
-        static var tierThreeColleges = [College]?()
+        static var allColleges:[College]?
+        static var tierOneColleges:[College]?
+        static var tierTwoColleges:[College]?
+        static var tierThreeColleges:[College]?
     }
     
     init(json: JSON) {
@@ -20,61 +20,7 @@ class College: Equatable {
         self.tier = json["tier"].intValue
     }
     
-    static func getAllColleges() -> [College] {
-        if let allColleges = CollegeArrays.allColleges {
-            return allColleges
-        }
-        CollegeArrays.allColleges = loadCollegesArray()
-        return CollegeArrays.allColleges!
-    }
-    
-    static func getTierOneColleges() -> [College] {
-        if let tierOneColleges = CollegeArrays.tierOneColleges {
-            return tierOneColleges
-        }
-        
-        var colleges = [College]()
-        for college in getAllColleges() {
-            if college.tier == 1 {
-                colleges.append(college)
-            }
-        }
-        
-        CollegeArrays.tierOneColleges = colleges
-        return CollegeArrays.tierOneColleges!
-    }
-    
-    static func getTierTwoColleges() -> [College] {
-        if let tierTwoColleges = CollegeArrays.tierTwoColleges {
-            return tierTwoColleges
-        }
-        
-        var colleges = [College]()
-        for college in getAllColleges() {
-            if college.tier == 2 {
-                colleges.append(college)
-            }
-        }
-        
-        CollegeArrays.tierTwoColleges = colleges
-        return CollegeArrays.tierTwoColleges!
-    }
-    
-    static func getTierThreeColleges() -> [College] {
-        if let tierThreeColleges = CollegeArrays.tierThreeColleges {
-            return tierThreeColleges
-        }
-        
-        var colleges = [College]()
-        for college in getAllColleges() {
-            if college.tier == 3 {
-                colleges.append(college)
-            }
-        }
-        
-        CollegeArrays.tierThreeColleges = colleges
-        return CollegeArrays.tierThreeColleges!
-    }
+    // MARK: - JSON loading
     
     static func loadCollegesArray() -> [College] {
         let contents: NSString?
@@ -96,6 +42,59 @@ class College: Equatable {
         return [College]()
     }
     
+    // MARK: - Getters
+    
+    static func getAllColleges() -> [College] {
+        if let allColleges = CollegeArrays.allColleges {
+            return allColleges
+        }
+        
+        CollegeArrays.allColleges = loadCollegesArray()
+        return CollegeArrays.allColleges!
+    }
+    
+    static func getTierOneColleges() -> [College] {
+        if let tierOneColleges = CollegeArrays.tierOneColleges {
+            return tierOneColleges
+        }
+        
+        let colleges = getCollegesForTier(1)
+        CollegeArrays.tierOneColleges = colleges
+        
+        return CollegeArrays.tierOneColleges!
+    }
+    
+    static func getTierTwoColleges() -> [College] {
+        if let tierTwoColleges = CollegeArrays.tierTwoColleges {
+            return tierTwoColleges
+        }
+        
+        let colleges = getCollegesForTier(2)
+        CollegeArrays.tierTwoColleges = colleges
+        
+        return CollegeArrays.tierTwoColleges!
+    }
+    
+    static func getTierThreeColleges() -> [College] {
+        if let tierThreeColleges = CollegeArrays.tierThreeColleges {
+            return tierThreeColleges
+        }
+        
+        let colleges = getCollegesForTier(3)
+        CollegeArrays.tierThreeColleges = colleges
+        
+        return CollegeArrays.tierThreeColleges!
+    }
+    
+    // MARK: - Helper methods
+    
+    static func getCollegesForTier(tier : Int) -> [College] {
+        let colleges = getAllColleges().filter { (college: College) -> Bool in
+            return college.tier == tier
+        }
+        return colleges
+    }
+    
     static func getCurrentArray(tier: Int) -> [College] {
         switch tier {
         case 1:
@@ -110,7 +109,7 @@ class College: Equatable {
     }
 }
 
-//MARK: Equatable
+// MARK: Equatable
 func ==(lhs: College, rhs: College) -> Bool {
     return lhs.name == rhs.name && lhs.tier == rhs.tier
 }
