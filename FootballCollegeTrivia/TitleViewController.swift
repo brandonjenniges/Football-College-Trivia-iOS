@@ -8,14 +8,15 @@ class TitleViewController: GAITrackedViewController {
     
     var currentDifficulty: Difficulty?
     var currentGameType: GameType?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.screenName = "Title"
         Player.getAllPlayers()
     }
-
-    // MARK: Difficulty
+    
+    // MARK: - Difficulty
+    
     func showDifficultyPicker(sourceView: UIView) {
         let controller = UIAlertController(title: "Choose a difficulty", message: "", preferredStyle: .ActionSheet)
         controller.addAction(UIAlertAction(title: "Rookie", style: .Default, handler: { (UIAlertAction) -> Void in
@@ -40,7 +41,8 @@ class TitleViewController: GAITrackedViewController {
         self.navigationController?.presentViewController(controller, animated: true, completion: nil)
     }
     
-    //MARK: Buttons
+    // MARK: - Buttons
+    
     @IBAction func standardButtonPressed(sender: UIView) {
         self.showDifficultyPicker(sender)
         self.currentGameType = .Standard
@@ -56,12 +58,14 @@ class TitleViewController: GAITrackedViewController {
         self.currentGameType = .Practice
     }
     
-    //MARK: Rate
+    // MARK: - Rate
+    
     @IBAction func ratePressed(sender: AnyObject) {
         rateApp()
     }
     
-    //MARK: Segue
+    // MARK: - Segue
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "playGame" {
             if let viewController: GameViewController = segue.destinationViewController as? GameViewController {

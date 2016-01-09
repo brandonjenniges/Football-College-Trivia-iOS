@@ -6,7 +6,8 @@ import Foundation
 
 class ResultsViewController: GAITrackedViewController {
     
-    //MARK: Outlets
+    // MARK: - Outlets
+    
     @IBOutlet weak var scoreLabel: UILabel!
     var score:Int!
     
@@ -16,17 +17,20 @@ class ResultsViewController: GAITrackedViewController {
         scoreLabel.text = "Score: \(score)"
     }
     
-    //MARK: Return Home
+    // MARK: - Return Home
+    
     @IBAction func returnHome(sender: AnyObject) {
         navigationController?.popToRootViewControllerAnimated(true)
     }
     
-    //MARK: Play Again
+    // MARK: - Play Again
+    
     @IBAction func playAgain(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)
     }
     
-    //MARK: Rate
+    // MARK: - Rate
+    
     @IBAction func ratePressed(sender: AnyObject) {
         rateApp()
     }
