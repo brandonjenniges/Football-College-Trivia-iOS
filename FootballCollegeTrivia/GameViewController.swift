@@ -34,8 +34,10 @@ class GameViewController: GAITrackedViewController {
     var score:Int = 0
     var canGuess:Bool = true
     var correctAnswer:String?
+    
     //Survival
     var strikes:Int = 0
+    
     //Standard
     static var timer = NSTimer()
     static var minutes = 0
@@ -206,7 +208,7 @@ class GameViewController: GAITrackedViewController {
     @IBAction func returnHome(segue: UIStoryboardSegue) {
         navigationController?.popToRootViewControllerAnimated(true)
     }
-
+    
     //MARK: Scores
     func setCurrentScore() {
         currentLabel.text = "\(score)"
@@ -219,8 +221,8 @@ class GameViewController: GAITrackedViewController {
     
     //MARK: Standard
     func startCountDownTimer() {
-            GameViewController.secondsLeft = 120;
-            GameViewController.timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateCounter", userInfo: nil, repeats: true)
+        GameViewController.secondsLeft = 120;
+        GameViewController.timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateCounter", userInfo: nil, repeats: true)
     }
     
     func updateCounter() {
