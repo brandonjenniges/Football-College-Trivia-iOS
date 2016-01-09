@@ -44,6 +44,8 @@ class GameViewController: GAITrackedViewController {
     static var seconds = 0
     static var secondsLeft = 0
     
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         gameButtons = [firstButton, secondButton, thirdButton, fourthButton]
@@ -110,7 +112,16 @@ class GameViewController: GAITrackedViewController {
     func displayChoices(choices: [String]) {
         var index = 0
         for college in choices {
-            gameButtons[index].setTitle(college, forState: .Normal)
+            let button = gameButtons[index]
+            button.setTitle(college, forState: .Normal)
+            
+            if appDelegate.testMode {
+                if college == correctAnswer {
+                    button.accessibilityIdentifier = "answer"
+                } else {
+                    button.accessibilityIdentifier = ""
+                }
+            }
             index++
         }
     }

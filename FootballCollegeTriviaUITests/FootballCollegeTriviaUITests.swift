@@ -1,25 +1,18 @@
 //
-//  FootballCollegeTriviaUITests.swift
-//  FootballCollegeTriviaUITests
-//
-//  Created by Brandon Jenniges on 12/3/15.
 //  Copyright © 2015 Brandon Jenniges. All rights reserved.
 //
 
 import XCTest
 
 class FootballCollegeTriviaUITests: XCTestCase {
-        
+    
+    let app = XCUIApplication()
+    
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         
-        let app = XCUIApplication()
+        app.launchArguments = ["testMode"]
         setLanguage(app)
         app.launch()
     }
@@ -40,9 +33,21 @@ class FootballCollegeTriviaUITests: XCTestCase {
     
     func testScreenshotGameplay() {
         let app = XCUIApplication()
-        XCUIApplication().buttons["Standard"].tap()
-        app.sheets["Choose a difficulty"].collectionViews.buttons["Rookie"].tap()
-        app.buttons.elementBoundByIndex(4).tap()
+        XCUIApplication().buttons["Practice"].tap()
+        app.sheets["Choose a difficulty"].collectionViews.buttons["All-Pro"].tap()
+        
+        for _ in 1...2400 {
+            makeCorrectGuess()
+        }
+        
         snapshot("03Game")
+    }
+    
+    func makeCorrectGuess() {
+        let predicate = NSPredicate(format: "identifier == 'answer'")
+        let button = app.buttons.elementMatchingPredicate(predicate)
+        button.tap()
+        XCTAssert(button.exists)
+        sleep(1)
     }
 }
