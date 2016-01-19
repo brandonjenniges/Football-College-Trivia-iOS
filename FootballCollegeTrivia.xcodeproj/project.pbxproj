@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8012CE38EB29CBBE6BD591F8 /* Pods_FootballCollegeTriviaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B79CC7ED245EADEB38FC82 /* Pods_FootballCollegeTriviaTests.framework */; };
+		BD8CA83B1E3ED78AC61F7DFE /* Pods_FootballCollegeTriviaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267972A6F7E64872A97B1D71 /* Pods_FootballCollegeTriviaUITests.framework */; };
 		FB40502E1BF8F59A002900CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40500F1BF8F59A002900CC /* AppDelegate.swift */; };
 		FB40502F1BF8F59A002900CC /* all_colleges.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB4050111BF8F59A002900CC /* all_colleges.txt */; };
 		FB4050301BF8F59A002900CC /* all_players.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB4050121BF8F59A002900CC /* all_players.txt */; };
@@ -135,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8CA83B1E3ED78AC61F7DFE /* Pods_FootballCollegeTriviaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,9 +314,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB5364681C114EEA00300770 /* Build configuration list for PBXNativeTarget "FootballCollegeTriviaUITests" */;
 			buildPhases = (
+				D7899AD5B9563C378D47C638 /* Check Pods Manifest.lock */,
 				FB53645D1C114EEA00300770 /* Sources */,
 				FB53645E1C114EEA00300770 /* Frameworks */,
 				FB53645F1C114EEA00300770 /* Resources */,
+				772E1E10B4869B72E1F70A6F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -444,6 +448,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootballCollegeTrivia/Pods-FootballCollegeTrivia-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		772E1E10B4869B72E1F70A6F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootballCollegeTriviaUITests/Pods-FootballCollegeTriviaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AE175A499286F1586C401935 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -457,6 +476,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootballCollegeTrivia/Pods-FootballCollegeTrivia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7899AD5B9563C378D47C638 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E4A8A41ACBCCCC1102268317 /* Copy Pods Resources */ = {
@@ -736,6 +770,7 @@
 		};
 		FB5364691C114EEA00300770 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26E2E3D6794FEEB9AF18CEB8 /* Pods-FootballCollegeTriviaUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FootballCollegeTriviaUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -749,6 +784,7 @@
 		};
 		FB53646A1C114EEA00300770 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BFA53745F1039FBE2CD461C /* Pods-FootballCollegeTriviaUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FootballCollegeTriviaUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
