@@ -1,5 +1,7 @@
 # Football College Trivia for iOS
 
+[![Build Status](https://travis-ci.org/steveholt55/Football-College-Trivia-iOS.svg)](https://travis-ci.org/steveholt55/Football-College-Trivia-iOS)
+
 A football trivia game where the goal is to guess which college current NFL players attended.
 
 Download
