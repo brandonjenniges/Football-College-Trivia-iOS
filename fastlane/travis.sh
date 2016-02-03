@@ -1,3 +1,3 @@
 #!/bin/sh
 
-fastlane test
+fastlane ios test
