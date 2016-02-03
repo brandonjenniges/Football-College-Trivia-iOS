@@ -6,6 +6,7 @@ platform :ios do
 
   before_all do
 
+    ensure_git_status_clean
     cocoapods
 
   end
@@ -15,7 +16,8 @@ platform :ios do
   lane :test do
     scan(
       scheme: "FootballCollegeTrivia",
-      clean: true
+      clean: true,
+      destination: "platform=iOS Simulator,name=iPhone 6,OS=9.2"
     )
   end
 
