@@ -26,7 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -42,7 +43,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FB3330821B38FF970056DD62"
+               BlueprintIdentifier = "FB5364601C114EEA00300770"
                BuildableName = "FootballCollegeTriviaUITests.xctest"
                BlueprintName = "FootballCollegeTriviaUITests"
                ReferencedContainer = "container:FootballCollegeTrivia.xcodeproj">

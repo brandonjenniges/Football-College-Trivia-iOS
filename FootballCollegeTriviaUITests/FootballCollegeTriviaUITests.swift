@@ -36,7 +36,7 @@ class FootballCollegeTriviaUITests: XCTestCase {
         XCUIApplication().buttons["Practice"].tap()
         app.sheets["Choose a difficulty"].collectionViews.buttons["All-Pro"].tap()
         
-        for _ in 1...2400 {
+        for _ in 1...3 {
             makeCorrectGuess()
         }
         
