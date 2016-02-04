@@ -70,7 +70,6 @@ class GameViewController: GAITrackedViewController {
     
     func generateQuestion() {
         canGuess = true
-        print(currentArray?.count)
         if let currentArray = currentArray {
             if currentArray.count == 0 {
                 getCurrentArray()
@@ -152,7 +151,7 @@ class GameViewController: GAITrackedViewController {
     
     func guessWasCorrect(sender: UIButton) {
         self.resultLabel.text = "Correct!"
-        self.resultLabel.textColor = UIColor.greenColor()
+        self.resultLabel.textColor = positiveColor
         
         self.correctGuess()
         
