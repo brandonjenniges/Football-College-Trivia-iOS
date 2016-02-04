@@ -27,9 +27,10 @@ platform :ios do
       clear_previous_screenshots: true,
       clean: true,
       devices: [
-        "iPhone 6",
+        "iPad Pro",
         "iPhone 6 Plus",
-        "iPhone 5",
+        "iPhone 6",
+        "iPhone 5s",
         "iPhone 4s",
       ]
     )
