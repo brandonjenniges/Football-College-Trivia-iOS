@@ -1,285 +1,860 @@
-{"colleges":[{"college":"Abilene Christian","tier":3},
-{"college":"Air Force","tier":2},
-{"college":"Alabama","tier":1},
-{"college":"Alabama A&M","tier":3},
-{"college":"Alabama St.","tier":3},
-{"college":"Albion College","tier":3},
-{"college":"Appalach. St.","tier":3},
-{"college":"Arizona","tier":1},
-{"college":"Arizona St.","tier":1},
-{"college":"Arkansas","tier":1},
-{"college":"Arkansas P.B.","tier":3},
-{"college":"Arkansas St.","tier":2},
-{"college":"Army","tier":2},
-{"college":"Auburn","tier":1},
-{"college":"Baker","tier":3},
-{"college":"Ball State","tier":2},
-{"college":"Baylor","tier":1},
-{"college":"Belhaven","tier":3},
-{"college":"Beloit College","tier":3},
-{"college":"Bemidji St.","tier":3},
-{"college":"Bentley","tier":3},
-{"college":"Bethune-Cookman","tier":3},
-{"college":"Bloomsburg","tier":3},
-{"college":"Boise State","tier":1},
-{"college":"Boston College","tier":1},
-{"college":"Bowling Green St.","tier":2},
-{"college":"Brown","tier":3},
-{"college":"Buffalo","tier":2},
-{"college":"BYU","tier":1},
-{"college":"Cal Poly SLO","tier":3},
-{"college":"California","tier":1},
-{"college":"California (PA)","tier":3},
-{"college":"Carson-Newman","tier":3},
-{"college":"Catawba","tier":3},
-{"college":"Central Arkansas","tier":3},
-{"college":"Central Michigan","tier":2},
-{"college":"Central Missouri","tier":3},
-{"college":"Central Oklahoma","tier":3},
-{"college":"Centre","tier":3},
-{"college":"Chadron State","tier":3},
-{"college":"Charleston Southern","tier":3},
-{"college":"Chattanooga","tier":3},
-{"college":"Cincinnati","tier":1},
-{"college":"Citadel","tier":3},
-{"college":"Clemson","tier":1},
-{"college":"Coastal Carolina","tier":3},
-{"college":"Coe College","tier":3},
-{"college":"Colorado","tier":1},
-{"college":"Colorado St.","tier":2},
-{"college":"Colorado State-Pueblo","tier":3},
-{"college":"Columbia","tier":3},
-{"college":"Concordia-St. Paul","tier":3},
-{"college":"Connecticut","tier":1},
-{"college":"Cornell","tier":3},
-{"college":"Delaware","tier":3},
-{"college":"Delaware St.","tier":3},
-{"college":"Duke","tier":2},
-{"college":"East Central (OK)","tier":3},
-{"college":"Eastern Illinois","tier":3},
-{"college":"Eastern Michigan","tier":3},
-{"college":"Eastern Washington","tier":3},
-{"college":"ECU","tier":2},
-{"college":"FAU","tier":2},
-{"college":"FIU","tier":2},
-{"college":"Florida","tier":1},
-{"college":"Florida A&M","tier":3},
-{"college":"Florida State","tier":1},
-{"college":"Fordham","tier":3},
-{"college":"Fort Valley State","tier":3},
-{"college":"Fresno State","tier":2},
-{"college":"Furman","tier":3},
-{"college":"Georgia","tier":1},
-{"college":"Georgia Southern","tier":3},
-{"college":"Georgia St.","tier":3},
-{"college":"Georgia Tech","tier":1},
-{"college":"Grambling St.","tier":3},
-{"college":"Grand Valley St.","tier":3},
-{"college":"Hampton","tier":3},
-{"college":"Harding","tier":3},
-{"college":"Harvard","tier":3},
-{"college":"Hawaii","tier":2},
-{"college":"Heidelberg","tier":3},
-{"college":"Henderson St.","tier":3},
-{"college":"Hillsdale","tier":3},
-{"college":"Hobart","tier":3},
-{"college":"Hofstra","tier":3},
-{"college":"Holy Cross","tier":3},
-{"college":"Houston","tier":2},
-{"college":"Howard","tier":3},
-{"college":"Humboldt St.","tier":3},
-{"college":"Idaho","tier":2},
-{"college":"Idaho State","tier":3},
-{"college":"Illinois","tier":1},
-{"college":"Illinois St.","tier":3},
-{"college":"Indiana","tier":1},
-{"college":"Iowa","tier":1},
-{"college":"Iowa State","tier":1},
-{"college":"Jacksonv. St.","tier":3},
-{"college":"James Madison","tier":3},
-{"college":"Kansas","tier":1},
-{"college":"Kansas State","tier":1},
-{"college":"Kent State","tier":2},
-{"college":"Kentucky","tier":1},
-{"college":"Lafayette","tier":3},
-{"college":"Lane","tier":3},
-{"college":"Lehigh","tier":3},
-{"college":"Liberty","tier":3},
-{"college":"Lindenwood","tier":3},
-{"college":"Louisiana College","tier":3},
-{"college":"Louisiana Tech","tier":2},
-{"college":"Louisiana–Monroe","tier":3},
-{"college":"Louisville","tier":1},
-{"college":"LSU","tier":1},
-{"college":"Maine","tier":3},
-{"college":"Marist","tier":3},
-{"college":"Mars Hill","tier":3},
-{"college":"Marshall","tier":2},
-{"college":"Mary Hardin-Baylor","tier":3},
-{"college":"Maryland","tier":1},
-{"college":"Massachusetts","tier":2},
-{"college":"McGill","tier":3},
-{"college":"McNeese St.","tier":3},
-{"college":"Memphis","tier":2},
-{"college":"Miami","tier":1},
-{"college":"Miami (OH)","tier":2},
-{"college":"Michigan","tier":1},
-{"college":"Michigan State","tier":1},
-{"college":"Michigan Tech","tier":3},
-{"college":"Mid Tenn St.","tier":2},
-{"college":"Midwestern St.","tier":3},
-{"college":"Minnesota","tier":1},
-{"college":"Minnesota St-Mankato","tier":3},
-{"college":"Mississippi St.","tier":1},
-{"college":"Missouri","tier":1},
-{"college":"Missouri Southern","tier":3},
-{"college":"Missouri Southern St.","tier":3},
-{"college":"Missouri St.","tier":3},
-{"college":"Missouri W State","tier":3},
-{"college":"Monmouth","tier":3},
-{"college":"Monmouth (IL)","tier":3},
-{"college":"Montana","tier":3},
-{"college":"Montana St.","tier":3},
-{"college":"Montreal","tier":3},
-{"college":"Morehouse","tier":3},
-{"college":"Morgan St.","tier":3},
-{"college":"Mount Union","tier":3},
-{"college":"Murray St.","tier":3},
-{"college":"N. Alabama","tier":3},
-{"college":"N. Colorado","tier":3},
-{"college":"N.C. State","tier":1},
-{"college":"Northwestern St.","tier":3},
-{"college":"Navy","tier":2},
-{"college":"Nebraska","tier":1},
-{"college":"Nevada","tier":2},
-{"college":"New Hampshire","tier":3},
-{"college":"New Mex. St.","tier":2},
-{"college":"New Mexico","tier":2},
-{"college":"Newberry","tier":3},
-{"college":"Nicholls St.","tier":3},
-{"college":"None","tier":3},
-{"college":"Norfolk St.","tier":3},
-{"college":"North Carolina","tier":1},
-{"college":"North Carolina Central","tier":3},
-{"college":"North Dakota St.","tier":3},
-{"college":"North Greenville","tier":3},
-{"college":"North Texas","tier":3},
-{"college":"Northeastern State","tier":3},
-{"college":"Northern Colorado","tier":3},
-{"college":"Northern Illinois","tier":2},
-{"college":"Northern Iowa","tier":3},
-{"college":"Northwest Missouri St.","tier":3},
-{"college":"Northwestern","tier":1},
-{"college":"Northwood (MI)","tier":3},
-{"college":"Notre Dame","tier":1},
-{"college":"Ohio","tier":2},
-{"college":"Ohio Northern","tier":3},
-{"college":"Ohio State","tier":1},
-{"college":"Oklahoma","tier":1},
-{"college":"Oklahoma St.","tier":1},
-{"college":"Old Dominion","tier":3},
-{"college":"Ole Miss","tier":1},
-{"college":"Oregon","tier":1},
-{"college":"Oregon State","tier":1},
-{"college":"Penn State","tier":1},
-{"college":"Pittsburg St.","tier":3},
-{"college":"Pittsburgh","tier":3},
-{"college":"Portland St.","tier":3},
-{"college":"Prairie View A&M","tier":3},
-{"college":"Presbyterian","tier":3},
-{"college":"Princeton","tier":3},
-{"college":"Purdue","tier":1},
-{"college":"Regina","tier":3},
-{"college":"Rice","tier":2},
-{"college":"Richmond","tier":3},
-{"college":"Rutgers","tier":1},
-{"college":"S. Dakota St.","tier":3},
-{"college":"S.D. State","tier":2},
-{"college":"Sacramento St.","tier":3},
-{"college":"Saginaw Valley","tier":3},
-{"college":"Sam Houston","tier":3},
-{"college":"Samford","tier":3},
-{"college":"San Diego","tier":2},
-{"college":"San Jose St.","tier":2},
-{"college":"SE Louisiana","tier":3},
-{"college":"Shepherd","tier":3},
-{"college":"Shippensburg","tier":3},
-{"college":"Slippery Rock","tier":3},
-{"college":"SMU","tier":2},
-{"college":"South Alabama","tier":3},
-{"college":"South Carolina","tier":1},
-{"college":"South Carolina St.","tier":3},
-{"college":"South Dakota","tier":3},
-{"college":"Southern","tier":3},
-{"college":"Southern Arkansas","tier":3},
-{"college":"Southern Illinois","tier":2},
-{"college":"Southern Miss","tier":2},
-{"college":"Southern Utah","tier":3},
-{"college":"St. Francis Xavier","tier":3},
-{"college":"St. Paul","tier":3},
-{"college":"Stanford","tier":1},
-{"college":"Stillman","tier":3},
-{"college":"Syracuse","tier":1},
-{"college":"Tarleton St.","tier":3},
-{"college":"TCU","tier":1},
-{"college":"Temple","tier":2},
-{"college":"Tenn-Chat","tier":3},
-{"college":"Tennessee","tier":1},
-{"college":"Tennessee St.","tier":3},
-{"college":"Tennessee–Martin","tier":3},
-{"college":"Texas","tier":1},
-{"college":"Texas A&M","tier":1},
-{"college":"Texas A&M-Commerce","tier":3},
-{"college":"Texas Southern","tier":3},
-{"college":"Texas St.","tier":3},
-{"college":"Texas Tech","tier":1},
-{"college":"Texas-San Antonio","tier":3},
-{"college":"Tiffin","tier":3},
-{"college":"Toledo","tier":2},
-{"college":"Towson","tier":3},
-{"college":"Towson State","tier":3},
-{"college":"Troy","tier":2},
-{"college":"Tulane","tier":2},
-{"college":"Tulsa","tier":2},
-{"college":"UAB","tier":2},
-{"college":"UC Davis","tier":3},
-{"college":"UC Irvine","tier":3},
-{"college":"UCF","tier":2},
-{"college":"UCLA","tier":1},
-{"college":"UL Lafayette","tier":3},
-{"college":"UNLV","tier":2},
-{"college":"USC","tier":1},
-{"college":"USF","tier":2},
-{"college":"Utah","tier":1},
-{"college":"Utah State","tier":2},
-{"college":"UTEP","tier":2},
-{"college":"UW-Milwaukee","tier":3},
-{"college":"Valdosta St.","tier":3},
-{"college":"Vanderbilt","tier":1},
-{"college":"Villanova","tier":3},
-{"college":"Virginia","tier":1},
-{"college":"Virginia Tech","tier":1},
-{"college":"W. Illinois","tier":3},
-{"college":"Wagner","tier":3},
-{"college":"Wake Forest","tier":1},
-{"college":"Walsh","tier":3},
-{"college":"Wash. St.","tier":1},
-{"college":"Washburn","tier":3},
-{"college":"Washington","tier":1},
-{"college":"Wayne State","tier":3},
-{"college":"West Alabama","tier":3},
-{"college":"West Texas A&M","tier":3},
-{"college":"West Virginia","tier":1},
-{"college":"Western Kentucky","tier":2},
-{"college":"Western Michigan","tier":2},
-{"college":"Western Ontario","tier":3},
-{"college":"Western Wash.","tier":3},
-{"college":"William & Mary","tier":3},
-{"college":"William Penn","tier":3},
-{"college":"Winston Salem","tier":3},
-{"college":"Wisconsin","tier":1},
-{"college":"Wisconsin–Whitewater","tier":3},
-{"college":"Wofford","tier":3},
-{"college":"Wyoming","tier":2},
-{"college":"Yale","tier":3},
-{"college":"Youngstown St.","tier":3}] }
+{
+"version": "1.1",
+"created": "2/4/2016",
+"colleges": [{
+"college": "Abilene Christian",
+"tier": 3
+}, {
+"college": "Air Force",
+"tier": 2
+}, {
+"college": "Alabama",
+"tier": 1
+}, {
+"college": "Alabama A&M",
+"tier": 3
+}, {
+"college": "Alabama St.",
+"tier": 3
+}, {
+"college": "Albion College",
+"tier": 3
+}, {
+"college": "Appalach. St.",
+"tier": 3
+}, {
+"college": "Arizona",
+"tier": 1
+}, {
+"college": "Arizona St.",
+"tier": 1
+}, {
+"college": "Arkansas",
+"tier": 1
+}, {
+"college": "Arkansas P.B.",
+"tier": 3
+}, {
+"college": "Arkansas St.",
+"tier": 2
+}, {
+"college": "Army",
+"tier": 2
+}, {
+"college": "Auburn",
+"tier": 1
+}, {
+"college": "Baker",
+"tier": 3
+}, {
+"college": "Ball State",
+"tier": 2
+}, {
+"college": "Baylor",
+"tier": 1
+}, {
+"college": "Belhaven",
+"tier": 3
+}, {
+"college": "Beloit College",
+"tier": 3
+}, {
+"college": "Bemidji St.",
+"tier": 3
+}, {
+"college": "Bentley",
+"tier": 3
+}, {
+"college": "Bethune-Cookman",
+"tier": 3
+}, {
+"college": "Bloomsburg",
+"tier": 3
+}, {
+"college": "Boise State",
+"tier": 1
+}, {
+"college": "Boston College",
+"tier": 1
+}, {
+"college": "Bowling Green St.",
+"tier": 2
+}, {
+"college": "Brown",
+"tier": 3
+}, {
+"college": "Buffalo",
+"tier": 2
+}, {
+"college": "BYU",
+"tier": 1
+}, {
+"college": "Cal Poly SLO",
+"tier": 3
+}, {
+"college": "California",
+"tier": 1
+}, {
+"college": "California (PA)",
+"tier": 3
+}, {
+"college": "Carson-Newman",
+"tier": 3
+}, {
+"college": "Catawba",
+"tier": 3
+}, {
+"college": "Central Arkansas",
+"tier": 3
+}, {
+"college": "Central Michigan",
+"tier": 2
+}, {
+"college": "Central Missouri",
+"tier": 3
+}, {
+"college": "Central Oklahoma",
+"tier": 3
+}, {
+"college": "Centre",
+"tier": 3
+}, {
+"college": "Chadron State",
+"tier": 3
+}, {
+"college": "Charleston Southern",
+"tier": 3
+}, {
+"college": "Chattanooga",
+"tier": 3
+}, {
+"college": "Cincinnati",
+"tier": 1
+}, {
+"college": "Citadel",
+"tier": 3
+}, {
+"college": "Clemson",
+"tier": 1
+}, {
+"college": "Coastal Carolina",
+"tier": 3
+}, {
+"college": "Coe College",
+"tier": 3
+}, {
+"college": "Colorado",
+"tier": 1
+}, {
+"college": "Colorado St.",
+"tier": 2
+}, {
+"college": "Colorado State-Pueblo",
+"tier": 3
+}, {
+"college": "Columbia",
+"tier": 3
+}, {
+"college": "Concordia-St. Paul",
+"tier": 3
+}, {
+"college": "Connecticut",
+"tier": 1
+}, {
+"college": "Cornell",
+"tier": 3
+}, {
+"college": "Delaware",
+"tier": 3
+}, {
+"college": "Delaware St.",
+"tier": 3
+}, {
+"college": "Duke",
+"tier": 2
+}, {
+"college": "East Central (OK)",
+"tier": 3
+}, {
+"college": "Eastern Illinois",
+"tier": 3
+}, {
+"college": "Eastern Michigan",
+"tier": 3
+}, {
+"college": "Eastern Washington",
+"tier": 3
+}, {
+"college": "ECU",
+"tier": 2
+}, {
+"college": "FAU",
+"tier": 2
+}, {
+"college": "FIU",
+"tier": 2
+}, {
+"college": "Florida",
+"tier": 1
+}, {
+"college": "Florida A&M",
+"tier": 3
+}, {
+"college": "Florida State",
+"tier": 1
+}, {
+"college": "Fordham",
+"tier": 3
+}, {
+"college": "Fort Valley State",
+"tier": 3
+}, {
+"college": "Fresno State",
+"tier": 2
+}, {
+"college": "Furman",
+"tier": 3
+}, {
+"college": "Georgia",
+"tier": 1
+}, {
+"college": "Georgia Southern",
+"tier": 3
+}, {
+"college": "Georgia St.",
+"tier": 3
+}, {
+"college": "Georgia Tech",
+"tier": 1
+}, {
+"college": "Grambling St.",
+"tier": 3
+}, {
+"college": "Grand Valley St.",
+"tier": 3
+}, {
+"college": "Hampton",
+"tier": 3
+}, {
+"college": "Harding",
+"tier": 3
+}, {
+"college": "Harvard",
+"tier": 3
+}, {
+"college": "Hawaii",
+"tier": 2
+}, {
+"college": "Heidelberg",
+"tier": 3
+}, {
+"college": "Henderson St.",
+"tier": 3
+}, {
+"college": "Hillsdale",
+"tier": 3
+}, {
+"college": "Hobart",
+"tier": 3
+}, {
+"college": "Hofstra",
+"tier": 3
+}, {
+"college": "Holy Cross",
+"tier": 3
+}, {
+"college": "Houston",
+"tier": 2
+}, {
+"college": "Howard",
+"tier": 3
+}, {
+"college": "Humboldt St.",
+"tier": 3
+}, {
+"college": "Idaho",
+"tier": 2
+}, {
+"college": "Idaho State",
+"tier": 3
+}, {
+"college": "Illinois",
+"tier": 1
+}, {
+"college": "Illinois St.",
+"tier": 3
+}, {
+"college": "Indiana",
+"tier": 1
+}, {
+"college": "Iowa",
+"tier": 1
+}, {
+"college": "Iowa State",
+"tier": 1
+}, {
+"college": "Jacksonv. St.",
+"tier": 3
+}, {
+"college": "James Madison",
+"tier": 3
+}, {
+"college": "Kansas",
+"tier": 1
+}, {
+"college": "Kansas State",
+"tier": 1
+}, {
+"college": "Kent State",
+"tier": 2
+}, {
+"college": "Kentucky",
+"tier": 1
+}, {
+"college": "Lafayette",
+"tier": 3
+}, {
+"college": "Lane",
+"tier": 3
+}, {
+"college": "Lehigh",
+"tier": 3
+}, {
+"college": "Liberty",
+"tier": 3
+}, {
+"college": "Lindenwood",
+"tier": 3
+}, {
+"college": "Louisiana College",
+"tier": 3
+}, {
+"college": "Louisiana Tech",
+"tier": 2
+}, {
+"college": "Louisiana–Monroe",
+"tier": 3
+}, {
+"college": "Louisville",
+"tier": 1
+}, {
+"college": "LSU",
+"tier": 1
+}, {
+"college": "Maine",
+"tier": 3
+}, {
+"college": "Marist",
+"tier": 3
+}, {
+"college": "Mars Hill",
+"tier": 3
+}, {
+"college": "Marshall",
+"tier": 2
+}, {
+"college": "Mary Hardin-Baylor",
+"tier": 3
+}, {
+"college": "Maryland",
+"tier": 1
+}, {
+"college": "Massachusetts",
+"tier": 2
+}, {
+"college": "McGill",
+"tier": 3
+}, {
+"college": "McNeese St.",
+"tier": 3
+}, {
+"college": "Memphis",
+"tier": 2
+}, {
+"college": "Miami",
+"tier": 1
+}, {
+"college": "Miami (OH)",
+"tier": 2
+}, {
+"college": "Michigan",
+"tier": 1
+}, {
+"college": "Michigan State",
+"tier": 1
+}, {
+"college": "Michigan Tech",
+"tier": 3
+}, {
+"college": "Mid Tenn St.",
+"tier": 2
+}, {
+"college": "Midwestern St.",
+"tier": 3
+}, {
+"college": "Minnesota",
+"tier": 1
+}, {
+"college": "Minnesota St-Mankato",
+"tier": 3
+}, {
+"college": "Mississippi St.",
+"tier": 1
+}, {
+"college": "Missouri",
+"tier": 1
+}, {
+"college": "Missouri Southern",
+"tier": 3
+}, {
+"college": "Missouri Southern St.",
+"tier": 3
+}, {
+"college": "Missouri St.",
+"tier": 3
+}, {
+"college": "Missouri W State",
+"tier": 3
+}, {
+"college": "Monmouth",
+"tier": 3
+}, {
+"college": "Monmouth (IL)",
+"tier": 3
+}, {
+"college": "Montana",
+"tier": 3
+}, {
+"college": "Montana St.",
+"tier": 3
+}, {
+"college": "Montreal",
+"tier": 3
+}, {
+"college": "Morehouse",
+"tier": 3
+}, {
+"college": "Morgan St.",
+"tier": 3
+}, {
+"college": "Mount Union",
+"tier": 3
+}, {
+"college": "Murray St.",
+"tier": 3
+}, {
+"college": "N. Alabama",
+"tier": 3
+}, {
+"college": "N. Colorado",
+"tier": 3
+}, {
+"college": "N.C. State",
+"tier": 1
+}, {
+"college": "Northwestern St.",
+"tier": 3
+}, {
+"college": "Navy",
+"tier": 2
+}, {
+"college": "Nebraska",
+"tier": 1
+}, {
+"college": "Nevada",
+"tier": 2
+}, {
+"college": "New Hampshire",
+"tier": 3
+}, {
+"college": "New Mex. St.",
+"tier": 2
+}, {
+"college": "New Mexico",
+"tier": 2
+}, {
+"college": "Newberry",
+"tier": 3
+}, {
+"college": "Nicholls St.",
+"tier": 3
+}, {
+"college": "None",
+"tier": 3
+}, {
+"college": "Norfolk St.",
+"tier": 3
+}, {
+"college": "North Carolina",
+"tier": 1
+}, {
+"college": "North Carolina Central",
+"tier": 3
+}, {
+"college": "North Dakota St.",
+"tier": 3
+}, {
+"college": "North Greenville",
+"tier": 3
+}, {
+"college": "North Texas",
+"tier": 3
+}, {
+"college": "Northeastern State",
+"tier": 3
+}, {
+"college": "Northern Colorado",
+"tier": 3
+}, {
+"college": "Northern Illinois",
+"tier": 2
+}, {
+"college": "Northern Iowa",
+"tier": 3
+}, {
+"college": "Northwest Missouri St.",
+"tier": 3
+}, {
+"college": "Northwestern",
+"tier": 1
+}, {
+"college": "Northwood (MI)",
+"tier": 3
+}, {
+"college": "Notre Dame",
+"tier": 1
+}, {
+"college": "Ohio",
+"tier": 2
+}, {
+"college": "Ohio Northern",
+"tier": 3
+}, {
+"college": "Ohio State",
+"tier": 1
+}, {
+"college": "Oklahoma",
+"tier": 1
+}, {
+"college": "Oklahoma St.",
+"tier": 1
+}, {
+"college": "Old Dominion",
+"tier": 3
+}, {
+"college": "Ole Miss",
+"tier": 1
+}, {
+"college": "Oregon",
+"tier": 1
+}, {
+"college": "Oregon State",
+"tier": 1
+}, {
+"college": "Penn State",
+"tier": 1
+}, {
+"college": "Pittsburg St.",
+"tier": 3
+}, {
+"college": "Pittsburgh",
+"tier": 1
+}, {
+"college": "Portland St.",
+"tier": 3
+}, {
+"college": "Prairie View A&M",
+"tier": 3
+}, {
+"college": "Presbyterian",
+"tier": 3
+}, {
+"college": "Princeton",
+"tier": 3
+}, {
+"college": "Purdue",
+"tier": 1
+}, {
+"college": "Regina",
+"tier": 3
+}, {
+"college": "Rice",
+"tier": 2
+}, {
+"college": "Richmond",
+"tier": 3
+}, {
+"college": "Rutgers",
+"tier": 1
+}, {
+"college": "S. Dakota St.",
+"tier": 3
+}, {
+"college": "S.D. State",
+"tier": 2
+}, {
+"college": "Sacramento St.",
+"tier": 3
+}, {
+"college": "Saginaw Valley",
+"tier": 3
+}, {
+"college": "Sam Houston",
+"tier": 3
+}, {
+"college": "Samford",
+"tier": 3
+}, {
+"college": "San Diego",
+"tier": 2
+}, {
+"college": "San Jose St.",
+"tier": 2
+}, {
+"college": "SE Louisiana",
+"tier": 3
+}, {
+"college": "Shepherd",
+"tier": 3
+}, {
+"college": "Shippensburg",
+"tier": 3
+}, {
+"college": "Slippery Rock",
+"tier": 3
+}, {
+"college": "SMU",
+"tier": 2
+}, {
+"college": "South Alabama",
+"tier": 3
+}, {
+"college": "South Carolina",
+"tier": 1
+}, {
+"college": "South Carolina St.",
+"tier": 3
+}, {
+"college": "South Dakota",
+"tier": 3
+}, {
+"college": "Southern",
+"tier": 3
+}, {
+"college": "Southern Arkansas",
+"tier": 3
+}, {
+"college": "Southern Illinois",
+"tier": 2
+}, {
+"college": "Southern Miss",
+"tier": 2
+}, {
+"college": "Southern Utah",
+"tier": 3
+}, {
+"college": "St. Francis Xavier",
+"tier": 3
+}, {
+"college": "St. Paul",
+"tier": 3
+}, {
+"college": "Stanford",
+"tier": 1
+}, {
+"college": "Stillman",
+"tier": 3
+}, {
+"college": "Syracuse",
+"tier": 1
+}, {
+"college": "Tarleton St.",
+"tier": 3
+}, {
+"college": "TCU",
+"tier": 1
+}, {
+"college": "Temple",
+"tier": 2
+}, {
+"college": "Tenn-Chat",
+"tier": 3
+}, {
+"college": "Tennessee",
+"tier": 1
+}, {
+"college": "Tennessee St.",
+"tier": 3
+}, {
+"college": "Tennessee–Martin",
+"tier": 3
+}, {
+"college": "Texas",
+"tier": 1
+}, {
+"college": "Texas A&M",
+"tier": 1
+}, {
+"college": "Texas A&M-Commerce",
+"tier": 3
+}, {
+"college": "Texas Southern",
+"tier": 3
+}, {
+"college": "Texas St.",
+"tier": 3
+}, {
+"college": "Texas Tech",
+"tier": 1
+}, {
+"college": "Texas-San Antonio",
+"tier": 3
+}, {
+"college": "Tiffin",
+"tier": 3
+}, {
+"college": "Toledo",
+"tier": 2
+}, {
+"college": "Towson",
+"tier": 3
+}, {
+"college": "Towson State",
+"tier": 3
+}, {
+"college": "Troy",
+"tier": 2
+}, {
+"college": "Tulane",
+"tier": 2
+}, {
+"college": "Tulsa",
+"tier": 2
+}, {
+"college": "UAB",
+"tier": 2
+}, {
+"college": "UC Davis",
+"tier": 3
+}, {
+"college": "UC Irvine",
+"tier": 3
+}, {
+"college": "UCF",
+"tier": 2
+}, {
+"college": "UCLA",
+"tier": 1
+}, {
+"college": "UL Lafayette",
+"tier": 3
+}, {
+"college": "UNLV",
+"tier": 2
+}, {
+"college": "USC",
+"tier": 1
+}, {
+"college": "USF",
+"tier": 2
+}, {
+"college": "Utah",
+"tier": 1
+}, {
+"college": "Utah State",
+"tier": 2
+}, {
+"college": "UTEP",
+"tier": 2
+}, {
+"college": "UW-Milwaukee",
+"tier": 3
+}, {
+"college": "Valdosta St.",
+"tier": 3
+}, {
+"college": "Vanderbilt",
+"tier": 1
+}, {
+"college": "Villanova",
+"tier": 3
+}, {
+"college": "Virginia",
+"tier": 1
+}, {
+"college": "Virginia Tech",
+"tier": 1
+}, {
+"college": "W. Illinois",
+"tier": 3
+}, {
+"college": "Wagner",
+"tier": 3
+}, {
+"college": "Wake Forest",
+"tier": 1
+}, {
+"college": "Walsh",
+"tier": 3
+}, {
+"college": "Wash. St.",
+"tier": 1
+}, {
+"college": "Washburn",
+"tier": 3
+}, {
+"college": "Washington",
+"tier": 1
+}, {
+"college": "Wayne State",
+"tier": 3
+}, {
+"college": "West Alabama",
+"tier": 3
+}, {
+"college": "West Texas A&M",
+"tier": 3
+}, {
+"college": "West Virginia",
+"tier": 1
+}, {
+"college": "Western Kentucky",
+"tier": 2
+}, {
+"college": "Western Michigan",
+"tier": 2
+}, {
+"college": "Western Ontario",
+"tier": 3
+}, {
+"college": "Western Wash.",
+"tier": 3
+}, {
+"college": "William & Mary",
+"tier": 3
+}, {
+"college": "William Penn",
+"tier": 3
+}, {
+"college": "Winston Salem",
+"tier": 3
+}, {
+"college": "Wisconsin",
+"tier": 1
+}, {
+"college": "Wisconsin–Whitewater",
+"tier": 3
+}, {
+"college": "Wofford",
+"tier": 3
+}, {
+"college": "Wyoming",
+"tier": 2
+}, {
+"college": "Yale",
+"tier": 3
+}, {
+"college": "Youngstown St.",
+"tier": 3
+}]
+}
