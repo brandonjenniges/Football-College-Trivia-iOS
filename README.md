@@ -4,11 +4,6 @@
 
 A football trivia game where the goal is to guess which college current NFL players attended.
 
-Android Version
------------
-
-https://github.com/steveholt55/Football-College-Trivia-Android
-
 Download
 --------------
 
@@ -36,6 +31,11 @@ Screenshots
 ![Phone](screenshots/football2.png "Difficulties")
 ![Phone](screenshots/football3.png "Game play")
 ![Phone](screenshots/football4.png "Game play")
+
+Android Version
+-----------
+
+https://github.com/steveholt55/Football-College-Trivia-Android
 
 License
 ---------------
