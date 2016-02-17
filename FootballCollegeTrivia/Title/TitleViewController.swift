@@ -4,14 +4,15 @@
 
 import UIKit
 
-class TitleViewController: GAITrackedViewController {
+class TitleViewController: GAITrackedViewController, TitleView {
     
-    var currentDifficulty: Difficulty?
-    var currentGameType: GameType?
+    static let storyboardId = String(TitleViewController)
+    var presenter: TitlePresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.screenName = "Title"
+        presenter = TitlePresenter(view: self)
         Player.getAllPlayers()
     }
     
@@ -20,42 +21,35 @@ class TitleViewController: GAITrackedViewController {
     func showDifficultyPicker(sourceView: UIView) {
         let controller = UIAlertController(title: "Choose a difficulty", message: "", preferredStyle: .ActionSheet)
         controller.addAction(UIAlertAction(title: "Rookie", style: .Default, handler: { (UIAlertAction) -> Void in
-            self.currentDifficulty = .Rookie
-            self.performSegueWithIdentifier("playGame", sender: self)
+            self.presenter.difficultySelected(.Rookie)
         }))
         controller.addAction(UIAlertAction(title: "Starter", style: .Default, handler: { (UIAlertAction) -> Void in
-            self.currentDifficulty = .Starter
-            self.performSegueWithIdentifier("playGame", sender: self)
+            self.presenter.difficultySelected(.Starter)
         }))
         controller.addAction(UIAlertAction(title: "Veteran", style: .Default, handler: { (UIAlertAction) -> Void in
-            self.currentDifficulty = .Veteran
-            self.performSegueWithIdentifier("playGame", sender: self)
+            self.presenter.difficultySelected(.Veteran)
         }))
         controller.addAction(UIAlertAction(title: "All-Pro", style: .Default, handler: { (UIAlertAction) -> Void in
-            self.currentDifficulty = .AllPro
-            self.performSegueWithIdentifier("playGame", sender: self)
+            self.presenter.difficultySelected(.AllPro)
         }))
         controller.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
         controller.popoverPresentationController?.sourceRect = sourceView.bounds
         controller.popoverPresentationController?.sourceView = sourceView
-        self.navigationController?.presentViewController(controller, animated: true, completion: nil)
+        self.presentViewController(controller, animated: true, completion: nil)
     }
     
     // MARK: - Buttons
     
-    @IBAction func standardButtonPressed(sender: UIView) {
-        self.showDifficultyPicker(sender)
-        self.currentGameType = .Standard
+    @IBAction func standardButtonPressed(view: UIView) {
+        self.presenter.gameTypeSelected(.Standard, view: view)
     }
     
-    @IBAction func survivalButtonPressed(sender: UIView) {
-        self.showDifficultyPicker(sender)
-        self.currentGameType = .Survival
+    @IBAction func survivalButtonPressed(view: UIView) {
+        self.presenter.gameTypeSelected(.Survival, view: view)
     }
     
-    @IBAction func practiceButtonPressed(sender: UIView) {
-        self.showDifficultyPicker(sender)
-        self.currentGameType = .Practice
+    @IBAction func practiceButtonPressed(view: UIView) {
+        self.presenter.gameTypeSelected(.Practice, view: view)
     }
     
     // MARK: - Rate
@@ -66,20 +60,15 @@ class TitleViewController: GAITrackedViewController {
     
     // MARK: - Segue
     
+    func playGame() {
+        self.performSegueWithIdentifier("playGame", sender: self)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "playGame" {
             if let viewController: GameViewController = segue.destinationViewController as? GameViewController {
-                
-                //Safety checks
-                if self.currentDifficulty == nil {
-                    self.currentDifficulty = .Rookie
-                }
-                if self.currentGameType == nil {
-                    self.currentGameType = .Standard
-                }
-                
-                viewController.currentGameType = self.currentGameType
-                viewController.currentDifficulty = self.currentDifficulty
+                viewController.currentGameType = self.presenter.gameType
+                viewController.currentDifficulty = self.presenter.difficulty
             }
         }
     }

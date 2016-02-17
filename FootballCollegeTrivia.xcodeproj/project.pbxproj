@@ -14,14 +14,11 @@
 		FB4050301BF8F59A002900CC /* all_players.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB4050121BF8F59A002900CC /* all_players.txt */; };
 		FB4050311BF8F59A002900CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4050131BF8F59A002900CC /* Assets.xcassets */; };
 		FB4050321BF8F59A002900CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4050141BF8F59A002900CC /* Main.storyboard */; };
-		FB4050341BF8F59A002900CC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4050171BF8F59A002900CC /* GameViewController.swift */; };
 		FB4050361BF8F59A002900CC /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40501A1BF8F59A002900CC /* ArrayExtension.swift */; };
 		FB4050371BF8F59A002900CC /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40501B1BF8F59A002900CC /* College.swift */; };
 		FB4050381BF8F59A002900CC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40501C1BF8F59A002900CC /* Game.swift */; };
 		FB4050391BF8F59A002900CC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB40501D1BF8F59A002900CC /* Player.swift */; };
 		FB40503A1BF8F59A002900CC /* NFL_College_Trivia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB40501F1BF8F59A002900CC /* NFL_College_Trivia.xcdatamodeld */; };
-		FB40503B1BF8F59A002900CC /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4050211BF8F59A002900CC /* ResultsViewController.swift */; };
-		FB40503C1BF8F59A002900CC /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4050221BF8F59A002900CC /* TitleViewController.swift */; };
 		FB40503D1BF8F59A002900CC /* UIButton+Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4050231BF8F59A002900CC /* UIButton+Game.swift */; };
 		FB40503E1BF8F59A002900CC /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4050241BF8F59A002900CC /* Util.swift */; };
 		FB5364641C114EEA00300770 /* FootballCollegeTriviaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364631C114EEA00300770 /* FootballCollegeTriviaUITests.swift */; };
@@ -31,10 +28,15 @@
 		FB5364721C115BF400300770 /* GameViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364711C115BF400300770 /* GameViewControllerTests.swift */; };
 		FB5364741C115C1C00300770 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364731C115C1C00300770 /* GameTests.swift */; };
 		FB5364761C115C2800300770 /* ResultsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364751C115C2800300770 /* ResultsViewControllerTests.swift */; };
-		FB5364781C115C3100300770 /* TitleViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364771C115C3100300770 /* TitleViewControllerTests.swift */; };
+		FB5364781C115C3100300770 /* TitleViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364771C115C3100300770 /* TitleViewPresenterTests.swift */; };
 		FBA58E801B4B8C2E00E93AA2 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA58E7E1B4B8C2E00E93AA2 /* Fabric.framework */; };
 		FBA58E811B4B8C2F00E93AA2 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA58E7F1B4B8C2E00E93AA2 /* Crashlytics.framework */; };
 		FBCEC99C1EC5ED924280B4AB /* Pods_FootballCollegeTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB680ED83BAC1107BDF0539 /* Pods_FootballCollegeTrivia.framework */; };
+		FBD5B0611C73FF42009B63DD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B05C1C73FF42009B63DD /* GameViewController.swift */; };
+		FBD5B0621C73FF42009B63DD /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B05E1C73FF42009B63DD /* ResultsViewController.swift */; };
+		FBD5B0631C73FF42009B63DD /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B0601C73FF42009B63DD /* TitleViewController.swift */; };
+		FBD5B0651C73FFED009B63DD /* TitleViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B0641C73FFED009B63DD /* TitleViewPresenter.swift */; };
+		FBD5B0671C74146D009B63DD /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B0661C74146D009B63DD /* TitleView.swift */; };
 		FBF84DA71B93EC7E00015159 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF84DA61B93EC7E00015159 /* CoreData.framework */; };
 		FBF84DA91B93EC9500015159 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF84DA81B93EC9500015159 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
@@ -82,7 +84,6 @@
 		FB4050121BF8F59A002900CC /* all_players.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = all_players.txt; sourceTree = "<group>"; };
 		FB4050131BF8F59A002900CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB4050151BF8F59A002900CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FB4050171BF8F59A002900CC /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		FB4050181BF8F59A002900CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB40501A1BF8F59A002900CC /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		FB40501B1BF8F59A002900CC /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
@@ -90,8 +91,6 @@
 		FB40501D1BF8F59A002900CC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		FB40501E1BF8F59A002900CC /* NFL-College-Trivia-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NFL-College-Trivia-Bridging-Header.h"; sourceTree = "<group>"; };
 		FB4050201BF8F59A002900CC /* NFL_College_Trivia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NFL_College_Trivia.xcdatamodel; sourceTree = "<group>"; };
-		FB4050211BF8F59A002900CC /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
-		FB4050221BF8F59A002900CC /* TitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
 		FB4050231BF8F59A002900CC /* UIButton+Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Game.swift"; sourceTree = "<group>"; };
 		FB4050241BF8F59A002900CC /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		FB4050261BF8F59A002900CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,9 +103,14 @@
 		FB5364711C115BF400300770 /* GameViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewControllerTests.swift; sourceTree = "<group>"; };
 		FB5364731C115C1C00300770 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		FB5364751C115C2800300770 /* ResultsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewControllerTests.swift; sourceTree = "<group>"; };
-		FB5364771C115C3100300770 /* TitleViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewControllerTests.swift; sourceTree = "<group>"; };
+		FB5364771C115C3100300770 /* TitleViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewPresenterTests.swift; sourceTree = "<group>"; };
 		FBA58E7E1B4B8C2E00E93AA2 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		FBA58E7F1B4B8C2E00E93AA2 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		FBD5B05C1C73FF42009B63DD /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FBD5B05E1C73FF42009B63DD /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		FBD5B0601C73FF42009B63DD /* TitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
+		FBD5B0641C73FFED009B63DD /* TitleViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewPresenter.swift; sourceTree = "<group>"; };
+		FBD5B0661C74146D009B63DD /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		FBF84DA61B93EC7E00015159 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FBF84DA81B93EC9500015159 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -204,17 +208,17 @@
 		FB40500E1BF8F59A002900CC /* FootballCollegeTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				FBD5B05B1C73FF42009B63DD /* Game */,
+				FBD5B05D1C73FF42009B63DD /* Result */,
+				FBD5B05F1C73FF42009B63DD /* Title */,
 				FB40500F1BF8F59A002900CC /* AppDelegate.swift */,
 				FB4050101BF8F59A002900CC /* Assets */,
 				FB4050131BF8F59A002900CC /* Assets.xcassets */,
 				FB4050141BF8F59A002900CC /* Main.storyboard */,
-				FB4050171BF8F59A002900CC /* GameViewController.swift */,
 				FB4050181BF8F59A002900CC /* Info.plist */,
 				FB4050191BF8F59A002900CC /* Model */,
 				FB40501E1BF8F59A002900CC /* NFL-College-Trivia-Bridging-Header.h */,
 				FB40501F1BF8F59A002900CC /* NFL_College_Trivia.xcdatamodeld */,
-				FB4050211BF8F59A002900CC /* ResultsViewController.swift */,
-				FB4050221BF8F59A002900CC /* TitleViewController.swift */,
 				FB4050231BF8F59A002900CC /* UIButton+Game.swift */,
 				FB4050241BF8F59A002900CC /* Util.swift */,
 			);
@@ -250,7 +254,7 @@
 				FB4050261BF8F59A002900CC /* Info.plist */,
 				FB53646F1C115BE600300770 /* PlayerTests.swift */,
 				FB5364751C115C2800300770 /* ResultsViewControllerTests.swift */,
-				FB5364771C115C3100300770 /* TitleViewControllerTests.swift */,
+				FB5364771C115C3100300770 /* TitleViewPresenterTests.swift */,
 			);
 			path = FootballCollegeTriviaTests;
 			sourceTree = "<group>";
@@ -263,6 +267,32 @@
 				FB5364651C114EEA00300770 /* Info.plist */,
 			);
 			path = FootballCollegeTriviaUITests;
+			sourceTree = "<group>";
+		};
+		FBD5B05B1C73FF42009B63DD /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				FBD5B05C1C73FF42009B63DD /* GameViewController.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		FBD5B05D1C73FF42009B63DD /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				FBD5B05E1C73FF42009B63DD /* ResultsViewController.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		FBD5B05F1C73FF42009B63DD /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				FBD5B0601C73FF42009B63DD /* TitleViewController.swift */,
+				FBD5B0641C73FFED009B63DD /* TitleViewPresenter.swift */,
+				FBD5B0661C74146D009B63DD /* TitleView.swift */,
+			);
+			path = Title;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -545,14 +575,16 @@
 			files = (
 				FB40502E1BF8F59A002900CC /* AppDelegate.swift in Sources */,
 				FB4050381BF8F59A002900CC /* Game.swift in Sources */,
-				FB4050341BF8F59A002900CC /* GameViewController.swift in Sources */,
 				FB4050391BF8F59A002900CC /* Player.swift in Sources */,
-				FB40503B1BF8F59A002900CC /* ResultsViewController.swift in Sources */,
+				FBD5B0621C73FF42009B63DD /* ResultsViewController.swift in Sources */,
 				FB4050361BF8F59A002900CC /* ArrayExtension.swift in Sources */,
+				FBD5B0651C73FFED009B63DD /* TitleViewPresenter.swift in Sources */,
+				FBD5B0611C73FF42009B63DD /* GameViewController.swift in Sources */,
+				FBD5B0631C73FF42009B63DD /* TitleViewController.swift in Sources */,
 				FB40503E1BF8F59A002900CC /* Util.swift in Sources */,
 				FB4050371BF8F59A002900CC /* College.swift in Sources */,
 				FB40503A1BF8F59A002900CC /* NFL_College_Trivia.xcdatamodeld in Sources */,
-				FB40503C1BF8F59A002900CC /* TitleViewController.swift in Sources */,
+				FBD5B0671C74146D009B63DD /* TitleView.swift in Sources */,
 				FB40503D1BF8F59A002900CC /* UIButton+Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,7 +593,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5364781C115C3100300770 /* TitleViewControllerTests.swift in Sources */,
+				FB5364781C115C3100300770 /* TitleViewPresenterTests.swift in Sources */,
 				FB5364761C115C2800300770 /* ResultsViewControllerTests.swift in Sources */,
 				FB53646E1C115BC600300770 /* CollegeTests.swift in Sources */,
 				FB5364701C115BE600300770 /* PlayerTests.swift in Sources */,
