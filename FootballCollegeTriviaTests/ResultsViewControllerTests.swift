@@ -77,4 +77,8 @@ class ResultsViewControllerTests: XCTestCase {
         
     }
     
+    func test_ratePressed() {
+        viewController.ratePressed(self)
+    }
+    
 }
