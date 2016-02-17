@@ -372,7 +372,6 @@
 				TargetAttributes = {
 					FB3330601B38FF960056DD62 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = C4RFALAB5D;
 					};
 					FB3330771B38FF960056DD62 = {
 						CreatedOnToolsVersion = 7.0;
