@@ -30,7 +30,13 @@ class GameTests: XCTestCase {
     }
     
     func test_getBestScoreForDifficulty() {
-        saveBestScoreForDifficulty(.Rookie, score: 20)
+        saveBestScoreForDifficulty(.Rookie, gametype: .Standard, score: 20)
+        saveBestScoreForDifficulty(.Veteran, gametype: .Survival, score: 50)
+        saveBestScoreForDifficulty(.AllPro, gametype: .Practice, score: 80)
+        
+        XCTAssert(getBestScoreForDifficulty(.Rookie, gametype: .Standard) == 20, "Expected '20' but score was \(getBestScoreForDifficulty(.Rookie, gametype: .Standard))")
+        XCTAssert(getBestScoreForDifficulty(.Veteran, gametype: .Survival) == 50, "Expected '50' but score was \(getBestScoreForDifficulty(.Veteran, gametype: .Survival))")
+        XCTAssert(getBestScoreForDifficulty(.AllPro, gametype: .Practice) == 80, "Expected '80' but score was \(getBestScoreForDifficulty(.AllPro, gametype: .Practice))")
     }
     
     func test_stringForSurvivalMode() {
