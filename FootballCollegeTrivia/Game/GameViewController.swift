@@ -225,7 +225,7 @@ class GameViewController: UIViewController {
     
     //MARK: High Scores
     func getBestScore() {
-        bestLabel.text = "\(getBestScoreForDifficulty(currentDifficulty))"
+        bestLabel.text = "\(getBestScoreForDifficulty(currentDifficulty, gametype: currentGameType))"
     }
     
     //MARK: Standard
@@ -255,8 +255,8 @@ class GameViewController: UIViewController {
             let viewController:ResultsViewController = segue.destinationViewController as! ResultsViewController
             viewController.score = score
             
-            if score > getBestScoreForDifficulty(currentDifficulty) {
-                saveBestScoreForDifficulty(currentDifficulty, score: score)
+            if score > getBestScoreForDifficulty(currentDifficulty, gametype: currentGameType) {
+                saveBestScoreForDifficulty(currentDifficulty, gametype: currentGameType, score: score)
             }
         }
     }

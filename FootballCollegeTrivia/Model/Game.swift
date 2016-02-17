@@ -25,12 +25,12 @@ func stringForDifficulty(difficulty: Difficulty) -> String {
     }
 }
 
-func getBestScoreForDifficulty(difficulty: Difficulty) -> Int  {
-    return NSUserDefaults.standardUserDefaults().integerForKey("GameVairation\(difficulty)")
+func getBestScoreForDifficulty(difficulty: Difficulty, gametype: GameType) -> Int  {
+    return NSUserDefaults.standardUserDefaults().integerForKey("GameVairation\(difficulty)-\(gametype))")
 }
 
-func saveBestScoreForDifficulty(difficulty: Difficulty, score: Int)  {
-    NSUserDefaults.standardUserDefaults().setInteger(score, forKey: "GameVairation\(difficulty)")
+func saveBestScoreForDifficulty(difficulty: Difficulty, gametype: GameType, score: Int)  {
+    NSUserDefaults.standardUserDefaults().setInteger(score, forKey: "GameVairation\(difficulty)-\(gametype))")
     NSUserDefaults.standardUserDefaults().synchronize()
 }
 
