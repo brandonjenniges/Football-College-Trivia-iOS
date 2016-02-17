@@ -5,7 +5,7 @@
 import XCTest
 @testable import FootballCollegeTrivia
 
-class TitleViewControllerTests: XCTestCase {
+class TitleViewPresenterTests: XCTestCase {
     
     var viewController: TitleViewController!
     var presenter:TitlePresenter!

@@ -6,10 +6,11 @@ import Foundation
 
 class ResultsViewController: GAITrackedViewController {
     
-    // MARK: - Outlets
+    static let storyboardId = String(ResultsViewController)
     
     @IBOutlet weak var scoreLabel: UILabel!
-    var score:Int!
+    
+    var score:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class ResultsViewController: GAITrackedViewController {
     // MARK: - Play Again
     
     @IBAction func playAgain(sender: AnyObject) {
-        self.navigationController?.popViewControllerAnimated(true)
+        navigationController?.popViewControllerAnimated(true)
     }
     
     // MARK: - Rate
