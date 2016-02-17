@@ -60,7 +60,7 @@ class GameViewController: UIViewController {
         canGuess = true
         
         resultLabel.text = "GO!"
-        resultLabel.textColor = UIColor.lightGrayColor()
+        resultLabel.textColor = .lightGrayColor()
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -166,7 +166,7 @@ class GameViewController: UIViewController {
             if button.titleForState(.Normal) == currentPlayer.college {
                 button.correct()
                 self.resultLabel.text = currentPlayer.college
-                self.resultLabel.textColor = UIColor.redColor()
+                self.resultLabel.textColor = .redColor()
             }
         }
         
@@ -204,12 +204,12 @@ class GameViewController: UIViewController {
         case .Survival:
             gameName = "Survival"
             modeLabel.text = " "
-            modeLabel.textColor = UIColor.redColor()
+            modeLabel.textColor = .redColor()
             break
         case .Practice:
             gameName = "Practice"
             modeLabel.text = "Practice"
-            modeLabel.textColor = UIColor.lightGrayColor()
+            modeLabel.textColor = .lightGrayColor()
             break
         }
     }
@@ -240,9 +240,9 @@ class GameViewController: UIViewController {
             GameViewController.minutes = (GameViewController.secondsLeft % 3600) / 60
             GameViewController.seconds = (GameViewController.secondsLeft % 3600) % 60
             modeLabel.text = String(format: "%d", GameViewController.minutes) + ":" + String(format: "%02d", GameViewController.seconds)
-            modeLabel.textColor = UIColor.darkGrayColor()
+            modeLabel.textColor = .darkGrayColor()
             if GameViewController.secondsLeft <= 10 {
-                modeLabel.textColor = UIColor.redColor()
+                modeLabel.textColor = .redColor()
             }
         } else {
             GameViewController.timer.invalidate()
