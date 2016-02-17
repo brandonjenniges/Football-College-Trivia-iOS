@@ -43,6 +43,6 @@ func stringForSurvivalMode(strikes: Int) -> String {
     case 3:
         return "X X X"
     default:
-        return "X X X"
+        return ""
     }
 }
