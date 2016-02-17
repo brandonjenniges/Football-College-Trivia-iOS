@@ -1,10 +1,10 @@
 //
-//  Copyright © 2014-2015 Brandon Jenniges. All rights reserved.
+//  Copyright © 2014-2016 Brandon Jenniges. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class ResultsViewController: GAITrackedViewController {
+class ResultsViewController: UIViewController {
     
     static let storyboardId = String(ResultsViewController)
     
@@ -14,7 +14,6 @@ class ResultsViewController: GAITrackedViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.screenName = "Results"
         scoreLabel.text = "Score: \(score)"
     }
     

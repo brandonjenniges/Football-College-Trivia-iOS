@@ -1,5 +1,5 @@
 //
-//  Copyright © 2014-2015 Brandon Jenniges. All rights reserved.
+//  Copyright © 2014-2016 Brandon Jenniges. All rights reserved.
 //
 
 import UIKit
@@ -16,14 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         #if RELEASE
             Fabric.with([Crashlytics()])
-            
-            if let path = NSBundle.mainBundle().pathForResource("Config", ofType: "plist"), let ids = NSDictionary(contentsOfFile: path) {
-                if let trackingId = ids.objectForKey("TrackingID") as? String {
-                    GAI.sharedInstance().trackUncaughtExceptions = true
-                    GAI.sharedInstance().dispatchInterval = 20
-                    GAI.sharedInstance().trackerWithTrackingId(trackingId)
-                }
-            }
         #endif
         
         return true

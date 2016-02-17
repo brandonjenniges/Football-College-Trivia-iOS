@@ -5,7 +5,7 @@
 import Foundation
 import UIKit
 
-class GameViewController: GAITrackedViewController {
+class GameViewController: UIViewController {
     
     var currentDifficulty: Difficulty!
     var currentGameType: GameType!
@@ -212,7 +212,6 @@ class GameViewController: GAITrackedViewController {
             modeLabel.textColor = UIColor.lightGrayColor()
             break
         }
-        self.screenName = gameName
     }
     
     @IBAction func returnHome(segue: UIStoryboardSegue) {

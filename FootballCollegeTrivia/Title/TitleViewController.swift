@@ -1,17 +1,16 @@
 //
-//  Copyright © 2014-2015 Brandon Jenniges. All rights reserved.
+//  Copyright © 2014-2016 Brandon Jenniges. All rights reserved.
 //
 
 import UIKit
 
-class TitleViewController: GAITrackedViewController, TitleView {
+class TitleViewController: UIViewController, TitleView {
     
     static let storyboardId = String(TitleViewController)
     var presenter: TitlePresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.screenName = "Title"
         presenter = TitlePresenter(view: self)
         Player.getAllPlayers()
     }

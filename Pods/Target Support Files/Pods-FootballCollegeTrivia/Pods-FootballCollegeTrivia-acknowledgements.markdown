@@ -1,10 +1,6 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## GoogleAnalytics
-
-Copyright 2015 Google Inc.
-
 ## SwiftyJSON
 
 The MIT License (MIT)

@@ -1,5 +1,5 @@
 //
-//  Copyright © 2015 Brandon Jenniges. All rights reserved.
+//  Copyright © 2015-2016 Brandon Jenniges. All rights reserved.
 //
 
 import XCTest

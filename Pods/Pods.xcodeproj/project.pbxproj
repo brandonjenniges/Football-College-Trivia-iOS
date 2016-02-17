@@ -12,13 +12,13 @@
 		382AFE10474986071FB7FBC024AA1B38 /* Pods-FootballCollegeTrivia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2747A2095745CCA04D8429DA1D01E4D /* Pods-FootballCollegeTrivia-dummy.m */; };
 		43CC1FEF2BDF5EC85CCC3551B491C20E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		6218228FFD0C7C182438A554B54401D8 /* Pods-FootballCollegeTriviaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CE0C1743675A9FE16CADADD8F012CC /* Pods-FootballCollegeTriviaUITests-dummy.m */; };
-		69338895CF8CFEC9E7EEF4A618F52461 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E48DBCF42CDAB02E48CB3CE75D79AC6 /* SwiftyJSON.swift */; };
+		69338895CF8CFEC9E7EEF4A618F52461 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
 		73DF693756C7A93C68A51071DB1EB894 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		7B5EA16A83E866B38111FF6B9293A572 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		838D81CF4AED5171FD0B193584D48724 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E499CBEAD18DE745E2F737AA101D8A /* SwiftyJSON-dummy.m */; };
+		838D81CF4AED5171FD0B193584D48724 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */; };
 		A0404A743148AC321A583E75B9A755D4 /* Pods-FootballCollegeTriviaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A96ABE39A4583F00022936A09B89BE5 /* Pods-FootballCollegeTriviaTests-dummy.m */; };
 		CDEEBE206E5D4217E16B0DD4B356DF63 /* Pods-FootballCollegeTriviaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E94BD043555A401939FD1FCAF17961A4 /* Pods-FootballCollegeTriviaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCCC1ED25523DDD7D4AF9BF52140F00E /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D788403C8EF4159571DE92C3BBB0E7F /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCCC1ED25523DDD7D4AF9BF52140F00E /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF1AF7E9A94698D4213C20D14C4BEAB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,51 +48,40 @@
 
 /* Begin PBXFileReference section */
 		0178F8135F2DFC7A44D623AFF5E430C8 /* Pods-FootballCollegeTriviaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FootballCollegeTriviaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		027BC8D7FF72E6A97594F4B31AB1D4BD /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommercePromotion.h; path = Headers/Public/GAIEcommercePromotion.h; sourceTree = "<group>"; };
-		06C5A2F7EC1297AA9801D001D1FEE668 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = Libraries/libGoogleAnalytics.a; sourceTree = "<group>"; };
-		091FDEC205D1FA017E4CA9BA80BC069A /* GAIFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = Headers/Public/GAIFields.h; sourceTree = "<group>"; };
-		0C28902DDD73CB5C6266FF1D8A90E44E /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		0F33F630B91A4DE4D660D477C7BA2BE8 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = Headers/Public/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		10E27DB8A766DEF6AA18433D42E0975F /* Pods-FootballCollegeTrivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FootballCollegeTrivia.debug.xcconfig"; sourceTree = "<group>"; };
 		1A96ABE39A4583F00022936A09B89BE5 /* Pods-FootballCollegeTriviaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FootballCollegeTriviaTests-dummy.m"; sourceTree = "<group>"; };
 		1AC850001468290C0EEACA25BB3AA4CD /* Pods-FootballCollegeTrivia-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FootballCollegeTrivia-acknowledgements.plist"; sourceTree = "<group>"; };
-		1C57D5459AC75202D318699C68AEF069 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		1E884A89E5B6332F657ADDD2A18D1458 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = Headers/Public/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
 		2A40301924EB049EAE87ED8F2ECB1878 /* Pods-FootballCollegeTrivia-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FootballCollegeTrivia-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2DA06033842E134690A41DD31E561514 /* GAITracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = Headers/Public/GAITracker.h; sourceTree = "<group>"; };
+		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		3796599DF9F681A61A1849C6E239EAA8 /* Pods-FootballCollegeTrivia-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FootballCollegeTrivia-resources.sh"; sourceTree = "<group>"; };
 		37CE0C1743675A9FE16CADADD8F012CC /* Pods-FootballCollegeTriviaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FootballCollegeTriviaUITests-dummy.m"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		41B3B4CAB2F26227ADBE3033FAA48120 /* Pods_FootballCollegeTriviaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FootballCollegeTriviaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C946B9B80A6D652E11BF2BE5193BF4 /* Pods-FootballCollegeTrivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FootballCollegeTrivia.release.xcconfig"; sourceTree = "<group>"; };
 		45A7EA6DA1CDAA6E3DFFC2E65BC527F0 /* Pods_FootballCollegeTrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FootballCollegeTrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		47C75B9127FF83B035083848D2191907 /* GAI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = Headers/Public/GAI.h; sourceTree = "<group>"; };
-		4D788403C8EF4159571DE92C3BBB0E7F /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		549C1B8C7366B77DD75A6C78E038C9B4 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = Headers/Public/GAIEcommerceFields.h; sourceTree = "<group>"; };
 		55E6B3C8DFC36F4A26345B43B4631663 /* Pods-FootballCollegeTriviaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FootballCollegeTriviaTests-frameworks.sh"; sourceTree = "<group>"; };
 		58D1FC25E3947BB35098C220EAF99C9A /* Pods-FootballCollegeTriviaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FootballCollegeTriviaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EF8FED5AFFB7A26B68FD30AE27718F4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F10255A38E208AACCEE2F180A16B8FA /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		681ED6E8A8C83E631B59B2C56AFFBC73 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68261C2F997C4B81D74F9B3E395BD25D /* Pods-FootballCollegeTriviaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FootballCollegeTriviaTests-resources.sh"; sourceTree = "<group>"; };
 		6B0688C8ACDD2FF4CF52ABF91CA7F8DD /* Pods-FootballCollegeTriviaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FootballCollegeTriviaTests-umbrella.h"; sourceTree = "<group>"; };
 		7DB0AD3232647D3591F686E90CDEB166 /* Pods-FootballCollegeTriviaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FootballCollegeTriviaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FDC6EBF54C6CED79E141275BFA1B171 /* Pods_FootballCollegeTriviaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FootballCollegeTriviaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		86E499CBEAD18DE745E2F737AA101D8A /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		87A0EFB0C99849C7D5E8571EA13AFACE /* Pods-FootballCollegeTriviaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FootballCollegeTriviaUITests-frameworks.sh"; sourceTree = "<group>"; };
 		8EB861DC3C1628717A49AFC57D7F194C /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F04E6BB6CB6611885E5F55DF4509626 /* GAILogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = Headers/Public/GAILogger.h; sourceTree = "<group>"; };
-		9E48DBCF42CDAB02E48CB3CE75D79AC6 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		A2747A2095745CCA04D8429DA1D01E4D /* Pods-FootballCollegeTrivia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FootballCollegeTrivia-dummy.m"; sourceTree = "<group>"; };
 		A28F3649CEE5103C2703BA5F49B04E73 /* Pods-FootballCollegeTriviaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FootballCollegeTriviaTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A92229FC3180E343CC8E1707322B5214 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A979B3F340764511BAE471091A8C1626 /* Pods-FootballCollegeTriviaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FootballCollegeTriviaTests.modulemap"; sourceTree = "<group>"; };
-		B5F274F069BA4BDFD8E724169A88FAB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C17FD6677B97711AFE3CE9B4CDC880D9 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProduct.h; path = Headers/Public/GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDCCD5477214DD9EFEF20895A1E08808 /* Pods-FootballCollegeTriviaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FootballCollegeTriviaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		D1234FBD026D125D846DB0C8B2A4B8A8 /* Pods-FootballCollegeTriviaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FootballCollegeTriviaUITests-resources.sh"; sourceTree = "<group>"; };
-		D1D09CD37733263B8DCE129944458526 /* GAITrackedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = Headers/Public/GAITrackedViewController.h; sourceTree = "<group>"; };
 		DDF80555E09832B4E790BAABCFFD7C29 /* Pods-FootballCollegeTrivia-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FootballCollegeTrivia-frameworks.sh"; sourceTree = "<group>"; };
 		E50B220A24FC3F5EE1F9AF9D161E40B1 /* Pods-FootballCollegeTriviaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FootballCollegeTriviaUITests.modulemap"; sourceTree = "<group>"; };
 		E7CC214FFC77976F75962E7272833587 /* Pods-FootballCollegeTriviaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FootballCollegeTriviaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -139,15 +128,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2DBBA88FC3E77E08E9D1BCA8745977A6 /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				9E48DBCF42CDAB02E48CB3CE75D79AC6 /* SwiftyJSON.swift */,
-				7DF5453D4D83E731EEA60F86E9635CAB /* Support Files */,
-			);
-			path = SwiftyJSON;
-			sourceTree = "<group>";
-		};
 		31CB3D92EB939A8DD5FAE024F6C58D84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,12 +167,13 @@
 			path = "Target Support Files/Pods-FootballCollegeTrivia";
 			sourceTree = "<group>";
 		};
-		54A5F16337DA8DA7C33926BB7C3E5510 /* Frameworks */ = {
+		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				06C5A2F7EC1297AA9801D001D1FEE668 /* libGoogleAnalytics.a */,
+				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
+				8EC39E1DC11846207722B71AAFE40F98 /* Support Files */,
 			);
-			name = Frameworks;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -200,24 +181,10 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				EDBCC7C8F5B5AADB2AA0632829B21C44 /* Pods */,
+				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
 				31CB3D92EB939A8DD5FAE024F6C58D84 /* Products */,
 				3F5D5176BCE27052022C672625F60911 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		7DF5453D4D83E731EEA60F86E9635CAB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B5F274F069BA4BDFD8E724169A88FAB4 /* Info.plist */,
-				0C28902DDD73CB5C6266FF1D8A90E44E /* SwiftyJSON.modulemap */,
-				5F10255A38E208AACCEE2F180A16B8FA /* SwiftyJSON.xcconfig */,
-				86E499CBEAD18DE745E2F737AA101D8A /* SwiftyJSON-dummy.m */,
-				1C57D5459AC75202D318699C68AEF069 /* SwiftyJSON-prefix.pch */,
-				4D788403C8EF4159571DE92C3BBB0E7F /* SwiftyJSON-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
 		85A4750D1CA89B56891BA2C35F5E96A3 /* Pods-FootballCollegeTriviaUITests */ = {
@@ -256,6 +223,20 @@
 			path = "Target Support Files/Pods-FootballCollegeTriviaTests";
 			sourceTree = "<group>";
 		};
+		8EC39E1DC11846207722B71AAFE40F98 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */,
+				D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */,
+				2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */,
+				32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */,
+				BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */,
+				05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,39 +245,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		DDB7D415DAE0FB7B1D880530C4DE36DB /* GoogleAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				47C75B9127FF83B035083848D2191907 /* GAI.h */,
-				0F33F630B91A4DE4D660D477C7BA2BE8 /* GAIDictionaryBuilder.h */,
-				549C1B8C7366B77DD75A6C78E038C9B4 /* GAIEcommerceFields.h */,
-				C17FD6677B97711AFE3CE9B4CDC880D9 /* GAIEcommerceProduct.h */,
-				1E884A89E5B6332F657ADDD2A18D1458 /* GAIEcommerceProductAction.h */,
-				027BC8D7FF72E6A97594F4B31AB1D4BD /* GAIEcommercePromotion.h */,
-				091FDEC205D1FA017E4CA9BA80BC069A /* GAIFields.h */,
-				8F04E6BB6CB6611885E5F55DF4509626 /* GAILogger.h */,
-				D1D09CD37733263B8DCE129944458526 /* GAITrackedViewController.h */,
-				2DA06033842E134690A41DD31E561514 /* GAITracker.h */,
-				54A5F16337DA8DA7C33926BB7C3E5510 /* Frameworks */,
-			);
-			path = GoogleAnalytics;
-			sourceTree = "<group>";
-		};
-		EDBCC7C8F5B5AADB2AA0632829B21C44 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DDB7D415DAE0FB7B1D880530C4DE36DB /* GoogleAnalytics */,
-				2DBBA88FC3E77E08E9D1BCA8745977A6 /* SwiftyJSON */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,7 +459,7 @@
 /* Begin XCBuildConfiguration section */
 		078095C8284D792BBB36BDF16F5D2494 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F10255A38E208AACCEE2F180A16B8FA /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -554,7 +516,7 @@
 		};
 		24331BDB4CB9572447B67B665D051187 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F10255A38E208AACCEE2F180A16B8FA /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;

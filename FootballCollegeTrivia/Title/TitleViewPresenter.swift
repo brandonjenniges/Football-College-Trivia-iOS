@@ -2,6 +2,8 @@
 //  Copyright © 2016 Brandon Jenniges. All rights reserved.
 //
 
+import UIKit
+
 protocol TitleViewPresenter {
     init(view: TitleView)
     func gameTypeSelected(gameType: GameType, view: UIView)
