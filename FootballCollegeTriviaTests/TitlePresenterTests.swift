@@ -1,11 +1,11 @@
 //
-//  Copyright © 2015 Brandon Jenniges. All rights reserved.
+//  Copyright © 2016 Brandon Jenniges. All rights reserved.
 //
 
 import XCTest
 @testable import FootballCollegeTrivia
 
-class TitleViewPresenterTests: XCTestCase {
+class TitlePresenterTests: XCTestCase {
     
     var viewController: TitleViewController!
     var presenter:TitlePresenter!

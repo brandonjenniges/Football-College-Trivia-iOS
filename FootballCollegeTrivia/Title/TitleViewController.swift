@@ -50,8 +50,7 @@ class TitleViewController: UIViewController, TitleView {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "playGame" {
             if let viewController: GameViewController = segue.destinationViewController as? GameViewController {
-                viewController.currentGameType = self.presenter.gameType
-                viewController.currentDifficulty = self.presenter.difficulty
+                viewController.presenter = GamePresenter(view: viewController, difficulty: self.presenter.difficulty, gameType: self.presenter.gameType)
             }
         }
     }

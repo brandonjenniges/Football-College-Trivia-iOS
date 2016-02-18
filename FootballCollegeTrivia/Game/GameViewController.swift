@@ -5,10 +5,7 @@
 import Foundation
 import UIKit
 
-class GameViewController: UIViewController {
-    
-    var currentDifficulty: Difficulty!
-    var currentGameType: GameType!
+class GameViewController: UIViewController, GameView {
     
     var gameName:String!
     
@@ -45,6 +42,8 @@ class GameViewController: UIViewController {
     static var secondsLeft = 0
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
+    var presenter: GamePresenter!
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -126,11 +125,9 @@ class GameViewController: UIViewController {
     }
     
     func getCurrentArray() {
-        if let currentDifficulty = currentDifficulty {
-            currentArray = Player.getCurrentArray(currentDifficulty)
-            currentArray?.shuffle()
-            self.title = stringForDifficulty(currentDifficulty)
-        }
+        currentArray = Player.getCurrentArray(presenter.difficulty)
+        currentArray?.shuffle()
+        self.title = stringForDifficulty(presenter.difficulty)
         generateQuestion()
     }
     
@@ -182,20 +179,20 @@ class GameViewController: UIViewController {
     }
     
     func wrongGuess() {
-        if currentGameType == .Survival {
+        if presenter.gameType == .Survival {
             strikes++
             modeLabel.text = stringForSurvivalMode(strikes)
             if strikes >= 3 {
                 performSegueWithIdentifier("gameOver", sender: self)
             }
-        } else if currentGameType == .Standard {
+        } else if presenter.gameType == .Standard {
             score--
             setCurrentScore()
         }
     }
     
     func setupGameModeSpecificSettings() {
-        switch self.currentGameType! {
+        switch presenter.gameType {
         case .Standard:
             gameName = "Standard"
             modeLabel.text = "2:00"
@@ -225,7 +222,7 @@ class GameViewController: UIViewController {
     
     //MARK: High Scores
     func getBestScore() {
-        bestLabel.text = "\(getBestScoreForDifficulty(currentDifficulty, gametype: currentGameType))"
+        bestLabel.text = "\(getBestScoreForDifficulty(presenter.difficulty, gametype: presenter.gameType))"
     }
     
     //MARK: Standard
@@ -255,8 +252,8 @@ class GameViewController: UIViewController {
             let viewController:ResultsViewController = segue.destinationViewController as! ResultsViewController
             viewController.score = score
             
-            if score > getBestScoreForDifficulty(currentDifficulty, gametype: currentGameType) {
-                saveBestScoreForDifficulty(currentDifficulty, gametype: currentGameType, score: score)
+            if score > getBestScoreForDifficulty(presenter.difficulty, gametype: presenter.gameType) {
+                saveBestScoreForDifficulty(presenter.difficulty, gametype: presenter.gameType, score: score)
             }
         }
     }

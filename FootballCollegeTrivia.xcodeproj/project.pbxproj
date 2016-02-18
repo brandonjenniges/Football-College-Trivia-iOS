@@ -29,14 +29,16 @@
 		FB5364721C115BF400300770 /* GameViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364711C115BF400300770 /* GameViewControllerTests.swift */; };
 		FB5364741C115C1C00300770 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364731C115C1C00300770 /* GameTests.swift */; };
 		FB5364761C115C2800300770 /* ResultsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364751C115C2800300770 /* ResultsViewControllerTests.swift */; };
-		FB5364781C115C3100300770 /* TitleViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364771C115C3100300770 /* TitleViewPresenterTests.swift */; };
+		FB5364781C115C3100300770 /* TitlePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364771C115C3100300770 /* TitlePresenterTests.swift */; };
 		FBA58E801B4B8C2E00E93AA2 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA58E7E1B4B8C2E00E93AA2 /* Fabric.framework */; };
 		FBA58E811B4B8C2F00E93AA2 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA58E7F1B4B8C2E00E93AA2 /* Crashlytics.framework */; };
+		FBA5F7201C757462008B4C0B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA5F71F1C757462008B4C0B /* GameView.swift */; };
+		FBA5F7221C75746C008B4C0B /* GamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA5F7211C75746C008B4C0B /* GamePresenter.swift */; };
 		FBCEC99C1EC5ED924280B4AB /* Pods_FootballCollegeTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB680ED83BAC1107BDF0539 /* Pods_FootballCollegeTrivia.framework */; };
 		FBD5B0611C73FF42009B63DD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B05C1C73FF42009B63DD /* GameViewController.swift */; };
 		FBD5B0621C73FF42009B63DD /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B05E1C73FF42009B63DD /* ResultsViewController.swift */; };
 		FBD5B0631C73FF42009B63DD /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B0601C73FF42009B63DD /* TitleViewController.swift */; };
-		FBD5B0651C73FFED009B63DD /* TitleViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B0641C73FFED009B63DD /* TitleViewPresenter.swift */; };
+		FBD5B0651C73FFED009B63DD /* TitlePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B0641C73FFED009B63DD /* TitlePresenter.swift */; };
 		FBD5B0671C74146D009B63DD /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5B0661C74146D009B63DD /* TitleView.swift */; };
 		FBF84DA71B93EC7E00015159 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF84DA61B93EC7E00015159 /* CoreData.framework */; };
 		FBF84DA91B93EC9500015159 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF84DA81B93EC9500015159 /* SystemConfiguration.framework */; };
@@ -105,13 +107,15 @@
 		FB5364711C115BF400300770 /* GameViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewControllerTests.swift; sourceTree = "<group>"; };
 		FB5364731C115C1C00300770 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		FB5364751C115C2800300770 /* ResultsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewControllerTests.swift; sourceTree = "<group>"; };
-		FB5364771C115C3100300770 /* TitleViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewPresenterTests.swift; sourceTree = "<group>"; };
+		FB5364771C115C3100300770 /* TitlePresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitlePresenterTests.swift; sourceTree = "<group>"; };
 		FBA58E7E1B4B8C2E00E93AA2 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		FBA58E7F1B4B8C2E00E93AA2 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		FBA5F71F1C757462008B4C0B /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		FBA5F7211C75746C008B4C0B /* GamePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePresenter.swift; sourceTree = "<group>"; };
 		FBD5B05C1C73FF42009B63DD /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		FBD5B05E1C73FF42009B63DD /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		FBD5B0601C73FF42009B63DD /* TitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
-		FBD5B0641C73FFED009B63DD /* TitleViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewPresenter.swift; sourceTree = "<group>"; };
+		FBD5B0641C73FFED009B63DD /* TitlePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitlePresenter.swift; sourceTree = "<group>"; };
 		FBD5B0661C74146D009B63DD /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		FBF84DA61B93EC7E00015159 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FBF84DA81B93EC9500015159 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -256,7 +260,7 @@
 				FB4050261BF8F59A002900CC /* Info.plist */,
 				FB53646F1C115BE600300770 /* PlayerTests.swift */,
 				FB5364751C115C2800300770 /* ResultsViewControllerTests.swift */,
-				FB5364771C115C3100300770 /* TitleViewPresenterTests.swift */,
+				FB5364771C115C3100300770 /* TitlePresenterTests.swift */,
 				FB2EDC9F1C743D4000530557 /* GameButtonTests.swift */,
 			);
 			path = FootballCollegeTriviaTests;
@@ -275,7 +279,9 @@
 		FBD5B05B1C73FF42009B63DD /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				FBA5F71F1C757462008B4C0B /* GameView.swift */,
 				FBD5B05C1C73FF42009B63DD /* GameViewController.swift */,
+				FBA5F7211C75746C008B4C0B /* GamePresenter.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -291,9 +297,9 @@
 		FBD5B05F1C73FF42009B63DD /* Title */ = {
 			isa = PBXGroup;
 			children = (
-				FBD5B0601C73FF42009B63DD /* TitleViewController.swift */,
-				FBD5B0641C73FFED009B63DD /* TitleViewPresenter.swift */,
+				FBD5B0641C73FFED009B63DD /* TitlePresenter.swift */,
 				FBD5B0661C74146D009B63DD /* TitleView.swift */,
+				FBD5B0601C73FF42009B63DD /* TitleViewController.swift */,
 			);
 			path = Title;
 			sourceTree = "<group>";
@@ -578,9 +584,11 @@
 				FB40502E1BF8F59A002900CC /* AppDelegate.swift in Sources */,
 				FB4050381BF8F59A002900CC /* Game.swift in Sources */,
 				FB4050391BF8F59A002900CC /* Player.swift in Sources */,
+				FBA5F7221C75746C008B4C0B /* GamePresenter.swift in Sources */,
 				FBD5B0621C73FF42009B63DD /* ResultsViewController.swift in Sources */,
 				FB4050361BF8F59A002900CC /* ArrayExtension.swift in Sources */,
-				FBD5B0651C73FFED009B63DD /* TitleViewPresenter.swift in Sources */,
+				FBD5B0651C73FFED009B63DD /* TitlePresenter.swift in Sources */,
+				FBA5F7201C757462008B4C0B /* GameView.swift in Sources */,
 				FBD5B0611C73FF42009B63DD /* GameViewController.swift in Sources */,
 				FBD5B0631C73FF42009B63DD /* TitleViewController.swift in Sources */,
 				FB40503E1BF8F59A002900CC /* Util.swift in Sources */,
@@ -595,7 +603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5364781C115C3100300770 /* TitleViewPresenterTests.swift in Sources */,
+				FB5364781C115C3100300770 /* TitlePresenterTests.swift in Sources */,
 				FB2EDCA01C743D4000530557 /* GameButtonTests.swift in Sources */,
 				FB5364761C115C2800300770 /* ResultsViewControllerTests.swift in Sources */,
 				FB53646E1C115BC600300770 /* CollegeTests.swift in Sources */,
