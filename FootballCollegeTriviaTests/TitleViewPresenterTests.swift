@@ -61,6 +61,7 @@ class TitleViewPresenterTests: XCTestCase {
         presenter.difficultySelected(.Starter)
         XCTAssert(presenter.difficulty == .Starter)
     }
+    
     func test_VeteranSelected() {
         presenter.gameTypeSelected(.Practice, view: UIView())
         self.viewController.dismissViewControllerAnimated(true, completion: nil)
@@ -76,5 +77,4 @@ class TitleViewPresenterTests: XCTestCase {
         presenter.difficultySelected(.AllPro)
         XCTAssert(presenter.difficulty == .AllPro)
     }
-    
 }

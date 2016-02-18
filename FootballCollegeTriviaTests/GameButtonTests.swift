@@ -15,7 +15,7 @@ class GameButtonTests: XCTestCase {
         super.tearDown()
     }
     
-    func testCorrectButton() {
+    func test_correctButton() {
         let readyExpectation = expectationWithDescription("ready")
         var string = ""
         let button = UIButton()
@@ -28,7 +28,7 @@ class GameButtonTests: XCTestCase {
         }
     }
     
-    func testIncorrectButton() {
+    func test_incorrectButton() {
         let readyExpectation = expectationWithDescription("ready")
         var string = ""
         let button = UIButton()
@@ -41,7 +41,7 @@ class GameButtonTests: XCTestCase {
         }
     }
     
-    func testNonClosure() {
+    func test_NonClosure() {
         let button = UIButton()
         button.correct()
         sleep(2)

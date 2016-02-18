@@ -4,13 +4,7 @@
 
 import UIKit
 
-protocol TitleViewPresenter {
-    init(view: TitleView)
-    func gameTypeSelected(gameType: GameType, view: UIView)
-    func difficultySelected(difficulty: Difficulty)
-}
-
-class TitlePresenter: TitleViewPresenter {
+class TitlePresenter {
     unowned let view: TitleView
     var difficulty: Difficulty = .Rookie
     var gameType: GameType = .Practice

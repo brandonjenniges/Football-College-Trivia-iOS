@@ -1,5 +1,5 @@
 //
-//  Copyright © 2014-2015 Brandon Jenniges. All rights reserved.
+//  Copyright © 2014-2016 Brandon Jenniges. All rights reserved.
 //
 
 import SwiftyJSON

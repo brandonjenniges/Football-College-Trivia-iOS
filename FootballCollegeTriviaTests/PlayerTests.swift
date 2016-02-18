@@ -9,20 +9,18 @@ class PlayerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testInit() {
+    func test_init() {
         let count = Player.getAllPlayers().count
         XCTAssert(count > 0)
     }
     
-    func testAllPlayers() {
+    func test_allPlayers() {
         for player in Player.getAllPlayers() {
             XCTAssert(!player.firstName.isEmpty, "\(player)")
             XCTAssert(!player.lastName.isEmpty, "\(player)")
@@ -33,6 +31,16 @@ class PlayerTests: XCTestCase {
             XCTAssert(!player.college.isEmpty, "\(player)")
             XCTAssert(player.tier > 0 && player.tier < 4, "\(player)")
         }
+    }
+    
+    func test_arrayShuffle() {
+        var players = Player.getAllPlayers()
+        let player = players[0]
+        var player2 = players[0]
+        XCTAssert(player.getDisplayText() == player2.getDisplayText(), "Expected players to be equal")
+        players.shuffle()
+        player2 = players[0]
+        XCTAssert(player.getDisplayText() != player2.getDisplayText(), "Expected players to be different")
     }
     
 }
