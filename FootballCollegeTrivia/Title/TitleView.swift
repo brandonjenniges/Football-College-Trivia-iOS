@@ -5,6 +5,6 @@
 import UIKit
 
 protocol TitleView: class {
-    func showDifficultyPicker(presentingView: UIView)
+    func presentDifficultyPicker(controller: UIAlertController)
     func playGame()
 }

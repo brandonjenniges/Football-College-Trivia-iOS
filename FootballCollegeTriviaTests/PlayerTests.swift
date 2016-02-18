@@ -33,14 +33,39 @@ class PlayerTests: XCTestCase {
         }
     }
     
+    func test_rookiePlayers() {
+        for player in Player.getRookiePlayers() {
+            XCTAssert(player.overall >= 80 && (player.position == "QB" || player.position == "RB" || player.position == "WR"))
+        }
+    }
+    
+    func test_starterPlayers() {
+        for player in Player.getStarterPlayers() {
+            XCTAssert(player.position == "QB" || player.position == "RB" || player.position == "WR")
+        }
+    }
+    
+    func test_veteranPlayers() {
+        for player in Player.getVeteranPlayers() {
+            XCTAssert(player.overall >= 76)
+        }
+    }
+    
+    func test_getCurrentArray() {
+        XCTAssert(Player.getRookiePlayers() == Player.getCurrentArray(.Rookie))
+        XCTAssert(Player.getStarterPlayers() == Player.getCurrentArray(.Starter))
+        XCTAssert(Player.getVeteranPlayers() == Player.getCurrentArray(.Veteran))
+        XCTAssert(Player.getAllPlayers() == Player.getCurrentArray(.AllPro))
+    }
+    
     func test_arrayShuffle() {
         var players = Player.getAllPlayers()
         let player = players[0]
         var player2 = players[0]
-        XCTAssert(player.getDisplayText() == player2.getDisplayText(), "Expected players to be equal")
+        XCTAssert(player == player2, "Expected players to be equal")
         players.shuffle()
         player2 = players[0]
-        XCTAssert(player.getDisplayText() != player2.getDisplayText(), "Expected players to be different")
+        XCTAssert(player != player2, "Expected players to be different")
     }
     
 }

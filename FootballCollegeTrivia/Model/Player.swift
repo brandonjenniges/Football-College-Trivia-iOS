@@ -1,10 +1,10 @@
 //
-//  Copyright © 2014-2015 Brandon Jenniges. All rights reserved.
+//  Copyright © 2014-2016 Brandon Jenniges. All rights reserved.
 //
 
 import SwiftyJSON
 
-class Player: CustomStringConvertible {
+class Player: CustomStringConvertible, Equatable {
     let firstName: String
     let lastName: String
     let proTeam: String
@@ -129,4 +129,9 @@ class Player: CustomStringConvertible {
     var description: String {
         return "Name: \(firstName) \(lastName) pos: \(position) #\(jerseyNumber) team: \(proTeam) college: \(college) tier: \(tier)"
     }
+}
+
+// MARK: Equatable
+func ==(lhs: Player, rhs: Player) -> Bool {
+    return lhs.getDisplayText() == rhs.getDisplayText() && lhs.overall == rhs.overall && lhs.college == rhs.college
 }

@@ -17,23 +17,7 @@ class TitleViewController: UIViewController, TitleView {
     
     // MARK: - Difficulty
     
-    func showDifficultyPicker(sourceView: UIView) {
-        let controller = UIAlertController(title: "Choose a difficulty", message: "", preferredStyle: .ActionSheet)
-        controller.addAction(UIAlertAction(title: "Rookie", style: .Default, handler: { (UIAlertAction) -> Void in
-            self.presenter.difficultySelected(.Rookie)
-        }))
-        controller.addAction(UIAlertAction(title: "Starter", style: .Default, handler: { (UIAlertAction) -> Void in
-            self.presenter.difficultySelected(.Starter)
-        }))
-        controller.addAction(UIAlertAction(title: "Veteran", style: .Default, handler: { (UIAlertAction) -> Void in
-            self.presenter.difficultySelected(.Veteran)
-        }))
-        controller.addAction(UIAlertAction(title: "All-Pro", style: .Default, handler: { (UIAlertAction) -> Void in
-            self.presenter.difficultySelected(.AllPro)
-        }))
-        controller.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
-        controller.popoverPresentationController?.sourceRect = sourceView.bounds
-        controller.popoverPresentationController?.sourceView = sourceView
+    func presentDifficultyPicker(controller: UIAlertController) {
         self.presentViewController(controller, animated: true, completion: nil)
     }
     
