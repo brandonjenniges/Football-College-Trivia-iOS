@@ -112,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXV-jA-opd" userLabel="Seperator View">
-                                <rect key="frame" x="20" y="277" width="560" height="3"/>
+                                <rect key="frame" x="20" y="277.5" width="560" height="3"/>
                                 <color key="backgroundColor" red="0.64983822599999996" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="SEG-gj-D6w">
@@ -121,14 +121,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUZ-jO-6wS" userLabel="ButtonView">
-                                <rect key="frame" x="20" y="281" width="560" height="319"/>
+                                <rect key="frame" x="20" y="281.5" width="560" height="318.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.080000000000000002" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Football Icon" translatesAutoresizingMaskIntoConstraints="NO" id="MgI-dI-4n9">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="319"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="318.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWe-M7-Yny" userLabel="Button1">
-                                        <rect key="frame" x="20" y="0.0" width="520" height="80"/>
+                                        <rect key="frame" x="20" y="0.0" width="520" height="79.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Button">
@@ -139,7 +139,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqI-bD-0hv" userLabel="Button2">
-                                        <rect key="frame" x="20" y="80" width="520" height="80"/>
+                                        <rect key="frame" x="20" y="79.5" width="520" height="79.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Button">
@@ -150,7 +150,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tb-Wb-Ld0" userLabel="Button4">
-                                        <rect key="frame" x="20" y="239" width="520" height="80"/>
+                                        <rect key="frame" x="20" y="239" width="520" height="79.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -163,7 +163,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mva-p3-gvm" userLabel="Button3">
-                                        <rect key="frame" x="20" y="160" width="520" height="79"/>
+                                        <rect key="frame" x="20" y="159" width="520" height="80"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -211,16 +211,16 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="Z2Q-Tl-dQy" userLabel="Question View">
-                                <rect key="frame" x="20" y="64" width="560" height="212"/>
+                                <rect key="frame" x="20" y="64" width="560" height="212.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Name HB #24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="6hK-aD-VVC">
-                                        <rect key="frame" x="182" y="8" width="196" height="43"/>
+                                        <rect key="frame" x="182.5" y="8" width="195.5" height="43.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsO-oe-GIj" userLabel="Seperator View">
-                                        <rect key="frame" x="0.0" y="51" width="560" height="3"/>
+                                        <rect key="frame" x="0.0" y="51.5" width="560" height="3"/>
                                         <color key="backgroundColor" red="0.64983822601010099" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="3" id="CQE-Xg-Nct">
@@ -229,25 +229,25 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pro Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHj-dV-Tsi">
-                                        <rect key="frame" x="236" y="58" width="88" height="44"/>
+                                        <rect key="frame" x="236" y="58.5" width="88" height="43"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="op6-cF-QuL">
-                                        <rect key="frame" x="228" y="110" width="104" height="43"/>
+                                        <rect key="frame" x="228.5" y="109.5" width="103.5" height="43.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkB-hc-uNn" userLabel="Guess Result">
-                                        <rect key="frame" x="277" y="161" width="6" height="43"/>
+                                        <rect key="frame" x="277.5" y="161" width="5.5" height="43.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0YU-95-9L0" userLabel="Best View">
-                                        <rect key="frame" x="10" y="154" width="37" height="48"/>
+                                        <rect key="frame" x="10" y="154.5" width="37" height="48"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GK-Qs-FgP" userLabel="Best Label">
                                                 <rect key="frame" x="4" y="0.0" width="29" height="17"/>
@@ -275,7 +275,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gNl-S6-zny" userLabel="Current View">
-                                        <rect key="frame" x="493" y="154" width="57" height="48"/>
+                                        <rect key="frame" x="493" y="154.5" width="57" height="48"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIX-EZ-U3B" userLabel="Current Label">
                                                 <rect key="frame" x="4" y="0.0" width="49" height="17"/>

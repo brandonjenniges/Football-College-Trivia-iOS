@@ -7,8 +7,6 @@ import UIKit
 
 class GameViewController: UIViewController, GameView {
     
-    var gameName:String!
-    
     //MARK: Outlets
     @IBOutlet weak var playerLabel: UILabel!
     @IBOutlet weak var proTeamLabel: UILabel!
@@ -22,41 +20,28 @@ class GameViewController: UIViewController, GameView {
     @IBOutlet weak var thirdButton: UIButton!
     @IBOutlet weak var fourthButton: UIButton!
     
-    var gameButtons:[UIButton]!
-    
     //MARK: Game Elements
-    var currentArray:[Player]?
-    var currentPlayer: Player!
-    
     var score:Int = 0
-    var canGuess:Bool = true
     var correctAnswer:String?
     
     //Survival
     var strikes:Int = 0
     
     //Standard
-    static var timer = NSTimer()
-    static var minutes = 0
-    static var seconds = 0
-    static var secondsLeft = 0
-    
-    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     var presenter: GamePresenter!
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        gameButtons = [firstButton, secondButton, thirdButton, fourthButton]
-        setupGameModeSpecificSettings()
-        getCurrentArray()
+        title = stringForDifficulty(presenter.difficulty)
+        self.presenter.gameButtons = [firstButton, secondButton, thirdButton, fourthButton]
+        self.presenter.setup()
+        self.presenter.setupGameModeSpecificSettings()
         
         score = 0
-        setCurrentScore()
         getBestScore()
         
         strikes = 0
-        canGuess = true
         
         resultLabel.text = "GO!"
         resultLabel.textColor = .lightGrayColor()
@@ -64,82 +49,32 @@ class GameViewController: UIViewController, GameView {
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        GameViewController.timer.invalidate()
+        self.presenter.stopTimer()
     }
     
-    func generateQuestion() {
-        canGuess = true
-        if let currentArray = currentArray {
-            if currentArray.count == 0 {
-                getCurrentArray()
-            } else {
-                currentPlayer = currentArray[0]
-                proTeamLabel.text = currentPlayer.proTeam
-                self.currentArray?.removeAtIndex(0)
-                playerLabel.text = currentPlayer.getDisplayText()
-                generateAnswers()
-            }
-        }
+    func applyMode(text: String, color: UIColor) {
+        self.modeLabel.text = text
+        self.modeLabel.textColor = color
     }
     
-    func generateAnswers() {
-        correctAnswer = currentPlayer.college
-        
-        var choices = [String]()
-        choices.append(correctAnswer!)
-        
-        var colleges = College.getCurrentArray(currentPlayer.tier)
-        
-        repeat
-        {
-            let index = Int(arc4random_uniform((UInt32(colleges.count))))
-            let c = colleges[index]
-            if choices.filter({ el in el == c.name }).count == 0 {
-                choices.append(c.name)
-            }
-            
-        }while( choices.count < 4 );
-        sortChoices(choices)
+    func finishGame() {
+        self.performSegueWithIdentifier("gameOver", sender: self)
     }
     
-    func sortChoices(choices: [String]) {
-        let sortedChoices = choices.sort()
-        displayChoices(sortedChoices)
-    }
-    
-    func displayChoices(choices: [String]) {
-        var index = 0
-        for college in choices {
-            let button = gameButtons[index]
-            button.setTitle(college, forState: .Normal)
-            
-            if appDelegate.testMode {
-                if college == correctAnswer {
-                    button.accessibilityIdentifier = "answer"
-                } else {
-                    button.accessibilityIdentifier = ""
-                }
-            }
-            index++
-        }
-    }
-    
-    func getCurrentArray() {
-        currentArray = Player.getCurrentArray(presenter.difficulty)
-        currentArray?.shuffle()
-        self.title = stringForDifficulty(presenter.difficulty)
-        generateQuestion()
+    func displayPlayer(player: Player) {
+        proTeamLabel.text = player.proTeam
+        playerLabel.text = player.getDisplayText()
     }
     
     //MARK: Button Press
     @IBAction func guessButtonPressed(sender: UIButton) {
         // Make sure user can't spam guesses
-        if !canGuess {
+        if !self.presenter.canGuess {
             return
         }
-        canGuess = false
+        self.presenter.canGuess = false
         
-        if sender.titleForState(.Normal) == currentPlayer.college {
+        if sender.titleForState(.Normal) == self.presenter.player.college {
             guessWasCorrect(sender)
         } else {
             guessWasIncorrect(sender)
@@ -153,23 +88,23 @@ class GameViewController: UIViewController, GameView {
         self.correctGuess()
         
         sender.correct { () -> Void in
-            self.generateQuestion()
+            self.presenter.generateQuestion()
         }
     }
     
     func guessWasIncorrect(sender: UIButton) {
         // Display what was correct answer
-        for button in gameButtons {
-            if button.titleForState(.Normal) == currentPlayer.college {
+        for button in self.presenter.gameButtons {
+            if button.titleForState(.Normal) == self.presenter.player.college {
                 button.correct()
-                self.resultLabel.text = currentPlayer.college
+                self.resultLabel.text = self.presenter.player.college
                 self.resultLabel.textColor = .redColor()
             }
         }
         
         self.wrongGuess()
         sender.incorrect { () -> Void in
-            self.generateQuestion()
+            self.presenter.generateQuestion()
         }
     }
     
@@ -191,26 +126,6 @@ class GameViewController: UIViewController, GameView {
         }
     }
     
-    func setupGameModeSpecificSettings() {
-        switch presenter.gameType {
-        case .Standard:
-            gameName = "Standard"
-            modeLabel.text = "2:00"
-            startCountDownTimer()
-            break
-        case .Survival:
-            gameName = "Survival"
-            modeLabel.text = " "
-            modeLabel.textColor = .redColor()
-            break
-        case .Practice:
-            gameName = "Practice"
-            modeLabel.text = "Practice"
-            modeLabel.textColor = .lightGrayColor()
-            break
-        }
-    }
-    
     @IBAction func returnHome(segue: UIStoryboardSegue) {
         navigationController?.popToRootViewControllerAnimated(true)
     }
@@ -223,28 +138,6 @@ class GameViewController: UIViewController, GameView {
     //MARK: High Scores
     func getBestScore() {
         bestLabel.text = "\(getBestScoreForDifficulty(presenter.difficulty, gametype: presenter.gameType))"
-    }
-    
-    //MARK: Standard
-    func startCountDownTimer() {
-        GameViewController.secondsLeft = 120;
-        GameViewController.timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateCounter", userInfo: nil, repeats: true)
-    }
-    
-    func updateCounter() {
-        if GameViewController.secondsLeft > 0 {
-            GameViewController.secondsLeft--
-            GameViewController.minutes = (GameViewController.secondsLeft % 3600) / 60
-            GameViewController.seconds = (GameViewController.secondsLeft % 3600) % 60
-            modeLabel.text = String(format: "%d", GameViewController.minutes) + ":" + String(format: "%02d", GameViewController.seconds)
-            modeLabel.textColor = .darkGrayColor()
-            if GameViewController.secondsLeft <= 10 {
-                modeLabel.textColor = .redColor()
-            }
-        } else {
-            GameViewController.timer.invalidate()
-            self.performSegueWithIdentifier("gameOver", sender: self)
-        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
