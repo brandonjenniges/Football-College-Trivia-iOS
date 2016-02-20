@@ -16,17 +16,28 @@ class GamePresenter: NSObject {
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
+    var score:Int = 0
+    var strikes:Int = 0
+    
     required init(view: GameView, difficulty: Difficulty, gameType: GameType) {
         self.view = view
         self.difficulty = difficulty
         self.gameType = gameType
     }
     
-    func setup() {
+    // MARK: - Setup
+    
+    func setup(gameButtons:[UIButton]) {
+        self.gameButtons = gameButtons
+        setupGameModeSpecificSettings()
         canGuess = true
         self.players = Player.getCurrentArray(self.difficulty)
         self.players.shuffle()
         generateQuestion()
+        score = 0
+        strikes = 0
+        self.view.showBestScore(getBestScoreForDifficulty(difficulty, gametype: gameType))
+        self.view.displayStartText()
     }
     
     func setupGameModeSpecificSettings() {
@@ -56,9 +67,9 @@ class GamePresenter: NSObject {
         }
     }
     
+    // MARK: - Answers
+    
     func generateAnswers() {
-        //correctAnswer = currentPlayer.college
-        
         var choices = [String]()
         choices.append(player.college)
         var colleges = College.getCurrentArray(player.tier)
@@ -94,6 +105,68 @@ class GamePresenter: NSObject {
                 }
             }
             index++
+        }
+    }
+    
+    // MARK: - Guesses
+    func checkGuess(button: UIButton) {
+        if !canGuess {
+            return
+        }
+        canGuess = false
+        
+        if button.titleForState(.Normal) == player.college {
+            guessWasCorrect(button)
+        } else {
+            guessWasIncorrect(button)
+        }
+    }
+    
+    func guessWasCorrect(sender: UIButton) {
+        self.view.displayCorrectGuessText()
+        self.correctGuess()
+        
+        sender.correct { () -> Void in
+            self.generateQuestion()
+        }
+    }
+    
+    func guessWasIncorrect(sender: UIButton) {
+        // Display what was correct answer
+        for button in gameButtons {
+            if button.titleForState(.Normal) == player.college {
+                button.correct()
+                self.view.displayWrongGuessText(player.college)
+            }
+        }
+        
+        self.wrongGuess()
+        sender.incorrect { () -> Void in
+            self.generateQuestion()
+        }
+    }
+    
+    func correctGuess() {
+        score++
+        self.view.updateScore(score)
+    }
+    
+    func wrongGuess() {
+        if gameType == .Survival {
+            strikes++
+            self.view.updateStrikes(stringForSurvivalMode(strikes))
+            if strikes >= 3 {
+                self.view.finishGame()
+            }
+        } else if gameType == .Standard {
+            score--
+            self.view.updateScore(score)
+        }
+    }
+    
+    func saveHighScore() {
+        if score > getBestScoreForDifficulty(difficulty, gametype: gameType) {
+            saveBestScoreForDifficulty(difficulty, gametype: gameType, score: score)
         }
     }
     

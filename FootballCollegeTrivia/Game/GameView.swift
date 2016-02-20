@@ -7,11 +7,17 @@ import UIKit
 protocol GameView: class {
     func applyMode(text: String, color: UIColor)
     
+    func displayStartText()
+    func showBestScore(score: Int)
+    
     func displayPlayer(player: Player)
     
-    func correctGuess()
-    func wrongGuess()
+    func displayCorrectGuessText()
+    func displayWrongGuessText(answer: String)
+    
+    func updateScore(score: Int)
+    
+    func updateStrikes(strikes: String)
     
     func finishGame()
-    
 }
