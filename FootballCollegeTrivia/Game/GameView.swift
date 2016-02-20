@@ -5,19 +5,23 @@
 import UIKit
 
 protocol GameView: class {
-    func applyMode(text: String, color: UIColor)
     
+    // MARK: - Starting setup display
+    
+    func applyModeDisplay(text: String, color: UIColor)
     func displayStartText()
     func showBestScore(score: Int)
     
-    func displayPlayer(player: Player)
+    // MARK: - Game
     
+    func displayPlayer(player: Player)
     func displayCorrectGuessText()
     func displayWrongGuessText(answer: String)
-    
     func updateScore(score: Int)
-    
     func updateStrikes(strikes: String)
     
+    // MARK: - Finish
+    
     func finishGame()
+    
 }

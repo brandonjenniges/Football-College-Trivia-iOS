@@ -4,7 +4,7 @@
 
 import UIKit
 
-class GamePresenter: NSObject {
+class GamePresenter: NSObject, GameTimerProtocol {
     unowned let view: GameView
     let difficulty: Difficulty
     let gameType: GameType
@@ -23,6 +23,8 @@ class GamePresenter: NSObject {
         self.view = view
         self.difficulty = difficulty
         self.gameType = gameType
+        super.init()
+        GameTimer.presenter = self
     }
     
     // MARK: - Setup
@@ -43,12 +45,12 @@ class GamePresenter: NSObject {
     func setupGameModeSpecificSettings() {
         switch gameType {
             case .Standard:
-                self.view.applyMode("2:00", color: .darkGrayColor())
+                self.view.applyModeDisplay("2:00", color: .darkGrayColor())
                 startTimer()
             case .Survival:
-                self.view.applyMode(" ", color: .redColor())
+                self.view.applyModeDisplay(" ", color: .redColor())
             case .Practice:
-                self.view.applyMode("Practice", color: .lightGrayColor())
+                self.view.applyModeDisplay("Practice", color: .lightGrayColor())
             }
     }
     
@@ -109,6 +111,7 @@ class GamePresenter: NSObject {
     }
     
     // MARK: - Guesses
+    
     func checkGuess(button: UIButton) {
         if !canGuess {
             return
@@ -173,29 +176,20 @@ class GamePresenter: NSObject {
     // MARK: - Timer 
     
     func startTimer() {
-        GameTimer.secondsLeft = 120;
-        GameTimer.timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateCounter", userInfo: nil, repeats: true)
-    }
-    
-    func updateCounter() {
-        if GameTimer.secondsLeft > 0 {
-            GameTimer.secondsLeft--
-            GameTimer.minutes = (GameTimer.secondsLeft % 3600) / 60
-            GameTimer.seconds = (GameTimer.secondsLeft % 3600) % 60
-            let displayText = String(format: "%d", GameTimer.minutes) + ":" + String(format: "%02d", GameTimer.seconds)
-            var color: UIColor = .darkGrayColor()
-            if GameTimer.secondsLeft <= 10 {
-                color = .redColor()
-            }
-            self.view.applyMode(displayText, color: color)
-        } else {
-            stopTimer()
-            self.view.finishGame()
-        }
+        GameTimer.start()
     }
 
-    
     func stopTimer() {
-        GameTimer.timer.invalidate()
+        GameTimer.stop()
+    }
+    
+    // MARK: - GameTimerProtocol
+    
+    func timeFinished() {
+        self.view.finishGame()
+    }
+    
+    func timeTicked(displayText: String, color: UIColor) {
+        self.view.applyModeDisplay(displayText, color: color)
     }
 }

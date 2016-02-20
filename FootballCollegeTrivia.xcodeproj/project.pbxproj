@@ -26,7 +26,7 @@
 		FB53646C1C114EFD00300770 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53646B1C114EFD00300770 /* SnapshotHelper.swift */; };
 		FB53646E1C115BC600300770 /* CollegeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53646D1C115BC600300770 /* CollegeTests.swift */; };
 		FB5364701C115BE600300770 /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53646F1C115BE600300770 /* PlayerTests.swift */; };
-		FB5364721C115BF400300770 /* GameViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364711C115BF400300770 /* GameViewControllerTests.swift */; };
+		FB5364721C115BF400300770 /* GamePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364711C115BF400300770 /* GamePresenterTests.swift */; };
 		FB5364741C115C1C00300770 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364731C115C1C00300770 /* GameTests.swift */; };
 		FB5364761C115C2800300770 /* ResultsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364751C115C2800300770 /* ResultsViewControllerTests.swift */; };
 		FB5364781C115C3100300770 /* TitlePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5364771C115C3100300770 /* TitlePresenterTests.swift */; };
@@ -105,7 +105,7 @@
 		FB53646B1C114EFD00300770 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		FB53646D1C115BC600300770 /* CollegeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollegeTests.swift; sourceTree = "<group>"; };
 		FB53646F1C115BE600300770 /* PlayerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTests.swift; sourceTree = "<group>"; };
-		FB5364711C115BF400300770 /* GameViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewControllerTests.swift; sourceTree = "<group>"; };
+		FB5364711C115BF400300770 /* GamePresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePresenterTests.swift; sourceTree = "<group>"; };
 		FB5364731C115C1C00300770 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		FB5364751C115C2800300770 /* ResultsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewControllerTests.swift; sourceTree = "<group>"; };
 		FB5364771C115C3100300770 /* TitlePresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitlePresenterTests.swift; sourceTree = "<group>"; };
@@ -257,13 +257,13 @@
 			isa = PBXGroup;
 			children = (
 				FB53646D1C115BC600300770 /* CollegeTests.swift */,
+				FB2EDC9F1C743D4000530557 /* GameButtonTests.swift */,
+				FB5364711C115BF400300770 /* GamePresenterTests.swift */,
 				FB5364731C115C1C00300770 /* GameTests.swift */,
-				FB5364711C115BF400300770 /* GameViewControllerTests.swift */,
 				FB4050261BF8F59A002900CC /* Info.plist */,
 				FB53646F1C115BE600300770 /* PlayerTests.swift */,
 				FB5364751C115C2800300770 /* ResultsViewControllerTests.swift */,
 				FB5364771C115C3100300770 /* TitlePresenterTests.swift */,
-				FB2EDC9F1C743D4000530557 /* GameButtonTests.swift */,
 			);
 			path = FootballCollegeTriviaTests;
 			sourceTree = "<group>";
@@ -612,7 +612,7 @@
 				FB5364761C115C2800300770 /* ResultsViewControllerTests.swift in Sources */,
 				FB53646E1C115BC600300770 /* CollegeTests.swift in Sources */,
 				FB5364701C115BE600300770 /* PlayerTests.swift in Sources */,
-				FB5364721C115BF400300770 /* GameViewControllerTests.swift in Sources */,
+				FB5364721C115BF400300770 /* GamePresenterTests.swift in Sources */,
 				FB5364741C115C1C00300770 /* GameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

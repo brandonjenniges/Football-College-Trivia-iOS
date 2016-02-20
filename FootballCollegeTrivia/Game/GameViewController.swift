@@ -20,9 +20,7 @@ class GameViewController: UIViewController, GameView {
     @IBOutlet weak var thirdButton: UIButton!
     @IBOutlet weak var fourthButton: UIButton!
     
-    //MARK: Game Elements
-    var correctAnswer:String?
-    
+    static let storyboardId = String(GameViewController)
     var presenter: GamePresenter!
     
     override func viewWillAppear(animated: Bool) {
@@ -36,19 +34,31 @@ class GameViewController: UIViewController, GameView {
         self.presenter.stopTimer()
     }
     
-    func applyMode(text: String, color: UIColor) {
-        self.modeLabel.text = text
-        self.modeLabel.textColor = color
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "gameOver" {
+            let viewController:ResultsViewController = segue.destinationViewController as! ResultsViewController
+            viewController.score = self.presenter.score
+            self.presenter.saveHighScore()
+        }
     }
     
-    func finishGame() {
-        self.performSegueWithIdentifier("gameOver", sender: self)
+    // MARK: - Starting setup display
+    
+    func applyModeDisplay(text: String, color: UIColor) {
+        self.modeLabel.text = text
+        self.modeLabel.textColor = color
     }
     
     func displayStartText() {
         resultLabel.text = "GO!"
         resultLabel.textColor = .lightGrayColor()
     }
+    
+    func showBestScore(score: Int) {
+        bestLabel.text = "\(score)"
+    }
+    
+    // MARK: - Game
     
     func displayPlayer(player: Player) {
         proTeamLabel.text = player.proTeam
@@ -65,34 +75,27 @@ class GameViewController: UIViewController, GameView {
         self.resultLabel.textColor = .redColor()
     }
     
-    //MARK: Button Press
-    @IBAction func guessButtonPressed(sender: UIButton) {
-        self.presenter.checkGuess(sender)        
-    }
-    
-    @IBAction func returnHome(segue: UIStoryboardSegue) {
-        navigationController?.popToRootViewControllerAnimated(true)
-    }
-    
-    //MARK: Scores
     func updateScore(score: Int) {
         currentLabel.text = "\(score)"
-    }
-    
-    //MARK: High Scores
-    func showBestScore(score: Int) {
-        bestLabel.text = "\(score)"
     }
     
     func updateStrikes(strikes: String) {
         modeLabel.text = strikes
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "gameOver" {
-            let viewController:ResultsViewController = segue.destinationViewController as! ResultsViewController
-            viewController.score = self.presenter.score
-            self.presenter.saveHighScore()
-        }
+    // MARK: - Finish
+    
+    func finishGame() {
+        self.performSegueWithIdentifier("gameOver", sender: self)
+    }
+    
+    //MARK: Button Press
+    
+    @IBAction func guessButtonPressed(sender: UIButton) {
+        self.presenter.checkGuess(sender)        
+    }
+    
+    @IBAction func returnHome(segue: UIStoryboardSegue) {
+        navigationController?.popToRootViewControllerAnimated(true)
     }
 }
