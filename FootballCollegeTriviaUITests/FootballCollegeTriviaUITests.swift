@@ -29,6 +29,7 @@ class FootballCollegeTriviaUITests: XCTestCase {
     func testScreenshotDifficultySelector() {
         XCUIApplication().buttons["Standard"].tap()
         snapshot("02Difficulty")
+        app.sheets["Choose a difficulty"].collectionViews.buttons["Rookie"].tap()
     }
     
     func testScreenshotGameplay() {
