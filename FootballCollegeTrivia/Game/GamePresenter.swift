@@ -9,9 +9,9 @@ class GamePresenter: NSObject, GameTimerProtocol {
     let difficulty: Difficulty
     let gameType: GameType
     
-    var gameButtons:[UIButton]!
+    var gameButtons:[UIButton] = []
     var canGuess:Bool = true
-    var players:[Player]!
+    var players:[Player] = []
     var player: Player!
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -31,15 +31,22 @@ class GamePresenter: NSObject, GameTimerProtocol {
     
     func setup(gameButtons:[UIButton]) {
         self.gameButtons = gameButtons
+        setupQuestions()
+        setupGamePlaySettings()
         setupGameModeSpecificSettings()
-        canGuess = true
+        finishGamePreperation()
+        generateQuestion()
+    }
+    
+    func setupQuestions() {
         self.players = Player.getCurrentArray(self.difficulty)
         self.players.shuffle()
-        generateQuestion()
+    }
+    
+    func setupGamePlaySettings() {
+        canGuess = true
         score = 0
         strikes = 0
-        self.view.showBestScore(getBestScoreForDifficulty(difficulty, gametype: gameType))
-        self.view.displayStartText()
     }
     
     func setupGameModeSpecificSettings() {
@@ -54,13 +61,18 @@ class GamePresenter: NSObject, GameTimerProtocol {
             }
     }
     
+    func finishGamePreperation() {
+        self.view.showBestScore(getBestScoreForDifficulty(difficulty, gametype: gameType))
+        self.view.displayStartText()
+    }
+    
     // MARK: - Questions
     
     func generateQuestion() {
         canGuess = true
         if self.players.count == 0 {
-            self.players = Player.getCurrentArray(self.difficulty)
-            self.players.shuffle()
+            setupQuestions() // Questions are empty.. reset them
+            generateQuestion()
         } else {
             player = players[0]
             self.players.removeAtIndex(0)
