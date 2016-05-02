@@ -1,4 +1,4 @@
-fastlane_version "1.51.0"
+fastlane_version "1.82.0"
 
 platform :ios do
 
@@ -6,7 +6,7 @@ platform :ios do
 
   before_all do
 
-    ensure_git_status_clean
+    #ensure_git_status_clean
     cocoapods
 
   end
@@ -14,14 +14,17 @@ platform :ios do
   ######################### PUBLIC LANES ##########################
 
   lane :test do
+
     scan(
       scheme: "FootballCollegeTrivia",
       clean: true,
       destination: "platform=iOS Simulator,name=iPhone 6,OS=9.2"
     )
+
   end
 
   lane :screens do
+
     snapshot(
       scheme: "FootballCollegeTrivia",
       clear_previous_screenshots: true,
@@ -34,6 +37,35 @@ platform :ios do
         "iPhone 4s",
       ]
     )
+
+  end
+
+  lane :fabric do
+
+    gym(
+      scheme: "FootballCollegeTrivia",
+      use_legacy_build_api: true,
+      codesigning_identity: "iPhone Developer: Brandon Jenniges" #force use of developer codesigning (change to user specific identity if different)
+    )
+
+    git_message = sh("git log --pretty=format:\"%h - %an, %s\" -10")
+
+    crashlytics(
+      crashlytics_path: './Crashlytics.framework',
+      ipa_path: './FootballCollegeTrivia.ipa',    
+      notes: "Recent commits \n ---------- \n #{git_message.to_s}",
+      groups: ["ios-test"], #alias name not group name
+      notifications: false,
+    )
+
+  end
+
+  lane :testflight do 
+
+    gym(scheme: "FootballCollegeTrivia")
+
+    pilot()
+
   end
 
   ############################# POST ##############################

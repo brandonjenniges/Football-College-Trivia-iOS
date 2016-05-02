@@ -141,3 +141,4 @@ fastlane/screenshots/screenshots.html
 
 # scan temporary files
 fastlane/test_output
+FootballCollegeTrivia.app.dSYM.zip

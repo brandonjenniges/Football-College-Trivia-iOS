@@ -315,12 +315,13 @@
 			buildConfigurationList = FB33308C1B38FF970056DD62 /* Build configuration list for PBXNativeTarget "FootballCollegeTrivia" */;
 			buildPhases = (
 				242EFE903785FD4E0546E2BB /* Check Pods Manifest.lock */,
+				FBA58E7D1B4B8C1E00E93AA2 /* Update Build Number */,
 				FB33305D1B38FF960056DD62 /* Sources */,
 				FB33305E1B38FF960056DD62 /* Frameworks */,
 				FB33305F1B38FF960056DD62 /* Resources */,
 				3024856160E695DA3D8DC261 /* Embed Pods Frameworks */,
 				AE175A499286F1586C401935 /* Copy Pods Resources */,
-				FBA58E7D1B4B8C1E00E93AA2 /* ShellScript */,
+				FB0567861CD7CB6300CF15AD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -384,6 +385,7 @@
 				TargetAttributes = {
 					FB3330601B38FF960056DD62 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = C4RFALAB5D;
 					};
 					FB3330771B38FF960056DD62 = {
 						CreatedOnToolsVersion = 7.0;
@@ -564,7 +566,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootballCollegeTriviaTests/Pods-FootballCollegeTriviaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FBA58E7D1B4B8C1E00E93AA2 /* ShellScript */ = {
+		FB0567861CD7CB6300CF15AD /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -576,6 +578,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "";
+		};
+		FBA58E7D1B4B8C1E00E93AA2 /* Update Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Set the build number to the count of Git commits\nbuildNumber=$(git rev-list HEAD | wc -l | tr -d ' ')\n/usr/libexec/PlistBuddy -c \"Set CFBundleVersion $buildNumber\" \"${TARGET_DIR}/${INFOPLIST_FILE}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -756,7 +772,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.holtapps.NFL-College-Trivia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "4283a2d2-3a5e-4ed0-b6b9-9078a5bacc28";
 				SWIFT_OBJC_BRIDGING_HEADER = "FootballCollegeTrivia/NFL-College-Trivia-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -771,7 +787,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -783,7 +799,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.holtapps.NFL-College-Trivia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "4283a2d2-3a5e-4ed0-b6b9-9078a5bacc28";
 				SWIFT_OBJC_BRIDGING_HEADER = "FootballCollegeTrivia/NFL-College-Trivia-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
