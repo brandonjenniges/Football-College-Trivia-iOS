@@ -19,7 +19,7 @@ class GameTimer: NSObject {
     
     static func start() {
         secondsLeft = 120;
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateCounter", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(GameTimer.updateCounter), userInfo: nil, repeats: true)
     }
     
     static func stop() {
@@ -28,7 +28,7 @@ class GameTimer: NSObject {
     
     static func updateCounter() {
         if GameTimer.secondsLeft > 0 {
-            GameTimer.secondsLeft--
+            GameTimer.secondsLeft -= 1
             GameTimer.minutes = (GameTimer.secondsLeft % 3600) / 60
             GameTimer.seconds = (GameTimer.secondsLeft % 3600) % 60
             let displayText = String(format: "%d", GameTimer.minutes) + ":" + String(format: "%02d", GameTimer.seconds)
