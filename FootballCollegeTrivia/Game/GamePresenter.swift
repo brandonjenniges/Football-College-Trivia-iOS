@@ -118,7 +118,7 @@ class GamePresenter: NSObject, GameTimerProtocol {
                     button.accessibilityIdentifier = ""
                 }
             }
-            index++
+            index += 1
         }
     }
     
@@ -162,19 +162,19 @@ class GamePresenter: NSObject, GameTimerProtocol {
     }
     
     func correctGuess() {
-        score++
+        score += 1
         self.view.updateScore(score)
     }
     
     func wrongGuess() {
         if gameType == .Survival {
-            strikes++
+            strikes += 1
             self.view.updateStrikes(stringForSurvivalMode(strikes))
             if strikes >= 3 {
                 self.view.finishGame()
             }
         } else if gameType == .Standard {
-            score--
+            score -= 1
             self.view.updateScore(score)
         }
     }
